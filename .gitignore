@@ -25,3 +25,6 @@ lecture/.project
 lecture/.classpath
 lecture/.gitignore
 /bin/
+.project
+.classpath
+.gitignore
