@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 // 작성자: 김동일
 // 파일:EnumJoinMember.java
 public enum EnumJoinMember {

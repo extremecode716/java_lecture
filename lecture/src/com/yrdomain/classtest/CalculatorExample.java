@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 
 public class CalculatorExample {
 

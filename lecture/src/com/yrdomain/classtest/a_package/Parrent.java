@@ -1,4 +1,4 @@
-package com.yrdomain.classTest.a_package;
+package com.yrdomain.classtest.a_package;
 
 public class Parrent {
 	public String m_strParrentPublic = "ParrentÀÇ public ÇÊµå";

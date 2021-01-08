@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 
 public class MideaPlayer {
 	// 슬라이드 has-a 추가할 것.

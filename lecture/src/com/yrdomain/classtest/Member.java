@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 
 // 작성자: 김동일 // model
 // 파일: Member.java

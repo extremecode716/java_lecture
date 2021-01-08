@@ -1,7 +1,7 @@
-package com.yrdomain.classTest.c_package;
+package com.yrdomain.classtest.c_package;
 
-import com.yrdomain.classTest.a_package.*;
-import com.yrdomain.classTest.b_package.*;
+import com.yrdomain.classtest.a_package.*;
+import com.yrdomain.classtest.b_package.*;
 
 public class Parrent_ChildTest {
 

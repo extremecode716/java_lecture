@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 import java.util.Scanner;
 
 // 작성자: 김동일 // 회원가입 실행 클래스 && View 클래스

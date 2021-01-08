@@ -1,6 +1,6 @@
-package com.yrdomain.classTest.b_package;
+package com.yrdomain.classtest.b_package;
 
-import com.yrdomain.classTest.a_package.Parrent;
+import com.yrdomain.classtest.a_package.Parrent;
 
 public class Child extends Parrent {
 	//public String m_strParrentPublic = "Child의 오버라이딩된 public 필드";

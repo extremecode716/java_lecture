@@ -1,4 +1,4 @@
-package com.yrdomain.classTest;
+package com.yrdomain.classtest;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -37,11 +37,8 @@ public class Calculator {
 	/////////////////////
 	// 실행 로직
 	public boolean run() {
-		if (!m_bPowerSwitch) {
-			printString("전원을 키세요.");
+		if (!checkPowerSwitch())
 			return false;
-		}
-
 		if (!inputData())
 			return false;
 		spliteInputDataAddListNumbersAndOperators();
@@ -53,7 +50,7 @@ public class Calculator {
 
 		return true;
 	}
-	
+
 	public void reset() {
 		m_strInputData = null;
 		m_strResult = null;
@@ -115,8 +112,8 @@ public class Calculator {
 		// 빈 공간 날린다
 		m_strInputData = sc.nextLine().replaceAll(" ", "");
 		// 문자열을 검사하여 맞는 표현인지 검사 진행.
-		//return false;
-		
+		// return false;
+
 		printString("입력 받았다");
 
 		return true;
@@ -134,7 +131,7 @@ public class Calculator {
 	private boolean calculate() {
 		printString("계산 메소드 실행");
 
-		// 계산이 되면 필드에 바로 때려넣을것임.
+		// 계산이 되면 필드에 바로 때려 넣을 것임.
 		return true;
 	}
 
@@ -151,11 +148,19 @@ public class Calculator {
 		return m_bPowerSwitch;
 	}
 
+	private boolean checkPowerSwitch() {
+		if (!m_bPowerSwitch) {
+			printString("전원을 키세요.");
+			return false;
+		}
+		return true;
+	}
+
 	public void printString(String _str) {
 		System.out.println(_str);
 	}
 
-	//	후위연산자로 변경.
+	// 후위연산자로 변경.
 	private boolean changeInfixToPrefix() {
 
 		return true;
