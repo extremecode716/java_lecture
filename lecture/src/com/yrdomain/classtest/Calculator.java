@@ -66,6 +66,7 @@ public class Calculator {
 
 		for (int i = 0; i < m_strInputData.length(); ++i) {
 			switch (m_strInputData.charAt(i)) {
+			case '.':
 			case '0':
 			case '1':
 			case '2':
@@ -95,13 +96,12 @@ public class Calculator {
 				listOperators.add(m_strInputData.charAt(i));
 				break;
 			default:
-				bNumberContinue = false;
 				break;
 			}
-			if (bNumberContinue) {
-				listNumbers.add(m_strInputData.substring(iNumberStartIndex, iNumberEndIndex));
-				bNumberContinue = false;
-			}
+		}
+		if (bNumberContinue) {
+			listNumbers.add(m_strInputData.substring(iNumberStartIndex, iNumberEndIndex));
+			bNumberContinue = false;
 		}
 		printString("숫자와 연산자를 분리시키는 메소드 실행(현재 중위표기법)");
 	}
