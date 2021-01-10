@@ -88,7 +88,7 @@ public class Member {
 		return m_strPhoneNumber;
 	}
 
-	public boolean getTermsOfService() {
+	public boolean isTermsOfService() {
 		return m_bTermsOfService;
 	}
 

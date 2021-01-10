@@ -6,6 +6,7 @@ public class Parrent {
 	String m_strParrentDefault = "Parrent의 default 필드";
 	private String m_strParrentPrivate = "Parrent의 private 필드";
 
+
 	public Parrent() {
 		System.out.println("부모 생성자 호출");
 	}

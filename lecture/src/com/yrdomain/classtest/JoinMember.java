@@ -33,7 +33,7 @@ public class JoinMember {
 
 		if (m_memberData.getLastName() == null || m_memberData.getFirstName() == null
 				|| m_memberData.getEmailID() == null || m_memberData.getPw() == null
-				|| m_memberData.getTermsOfService() == false)
+				|| m_memberData.isTermsOfService() == false)
 			return false;
 
 		listMemberDB.add(m_memberData.clone()); // Deep Copy
