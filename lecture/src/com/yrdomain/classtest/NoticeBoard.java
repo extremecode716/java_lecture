@@ -20,7 +20,8 @@ public class NoticeBoard {
 
 	///////////////////////////////////////////////////////
 	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION;
-	private int m_iNoticeType = NOMAR_TYPE; // 만약 공지랑 게시판으로 상속으로 나눠서 할꺼면, 이 필드만 처리하면 됨.//적합한 상속용 과제는 아닌듯.
+	private int m_iNoticeType = NOMAR_TYPE;
+	// 만약 공지랑 게시판으로 상속으로 나눠서 할꺼면, 위 필드 2개만 처리하면 됨.
 	private String m_strSubject = "";
 	private String m_strBodyText = "";
 	///////////////////////////////////////////////////////
@@ -123,6 +124,7 @@ public class NoticeBoard {
 			printString(" )");
 		}
 	}
+
 	private boolean submit() {
 		if (getSubject().equals(""))
 			return false;
@@ -211,7 +213,27 @@ public class NoticeBoard {
 
 	// main
 	public static void main(String[] args) {
-		NoticeBoard nb = new NoticeBoard(EnumUserPermission.USER_MANAGER_PERMISSION);
+		NoticeBoard nb = new NoticeBoard_Notice();
 		nb.run();
+	}
+}
+
+//공지
+class NoticeBoard_Notice extends NoticeBoard {
+
+	public NoticeBoard_Notice() {
+		super();
+		super.setUserPermission(EnumUserPermission.USER_MANAGER_PERMISSION);
+		super.setNoticeType(NOTICE_TYPE);
+	}
+}
+
+//일반
+class NoticeBoard_Nomar extends NoticeBoard {
+
+	public NoticeBoard_Nomar() {
+		super();
+		super.setUserPermission(EnumUserPermission.USER_GUEST_PERMISSION);
+		super.setNoticeType(NOMAR_TYPE);
 	}
 }
