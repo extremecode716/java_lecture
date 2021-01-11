@@ -6,7 +6,7 @@ import java.util.Scanner;
 //작성자 : 김동일
 public class CalendarExample {
 	private static Calendar cal = Calendar.getInstance(); //싱글톤, 현재시간을 가져옴.
-	private static int SEVEN_DAYS = 7;
+	private static final int SEVEN_DAYS = 7;
 	private static String[] arrStrDayOfWeek = { "일", "월", "화", "수", "목", "금", "토" };
 
 	public static void main(String[] args) {
