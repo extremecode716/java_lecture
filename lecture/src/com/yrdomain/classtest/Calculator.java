@@ -137,7 +137,7 @@ public class Calculator {
 
 	// 계산기를 키고 끈다.
 	public boolean powerSwitch() {
-		m_bPowerSwitch = (m_bPowerSwitch == false) ? (m_bPowerSwitch = true) : (m_bPowerSwitch = false);
+		m_bPowerSwitch = (m_bPowerSwitch == false) ? (true) : (false);
 
 		if (m_bPowerSwitch) {
 			printString("전원 on");

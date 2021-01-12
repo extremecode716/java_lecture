@@ -34,7 +34,7 @@ public class MideaPlayer {
 	// 영상 재생
 	public void play() {
 		m_bPlay = true;
-		m_bPause = (m_bPlay == true) ? (m_bPause = false) : (m_bPause = true);
+		m_bPause = (m_bPlay == true) ? (false) : (true);
 		/* 
 		 
 		*/
@@ -43,7 +43,7 @@ public class MideaPlayer {
 	// 영상 정지
 	public void pause() {
 		m_bPlay = false;
-		m_bPause = (m_bPlay == true) ? (m_bPause = false) : (m_bPause = true);
+		m_bPause = (m_bPlay == true) ? (false) : (true);
 		/*
 		 * 
 		 */
@@ -76,7 +76,7 @@ public class MideaPlayer {
 	// 전체 화면 스위치
 	public boolean switchToFullscrean() {
 
-		m_bFullScreen = (m_bFullScreen == false) ? (m_bFullScreen = true) : (m_bFullScreen = false);
+		m_bFullScreen = (m_bFullScreen == false) ? (true) : (false);
 
 		return m_bFullScreen;
 	}

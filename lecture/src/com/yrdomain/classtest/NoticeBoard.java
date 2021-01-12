@@ -2,6 +2,7 @@ package com.yrdomain.classtest;
 
 import java.util.Scanner;
 
+// 작성자: 김동일
 // User 접근 권한 // Enum 으로 변경 해도 됨
 class EnumUserPermission {
 	public static final int USER_NO_PERMISSION = 0;
@@ -19,7 +20,7 @@ public class NoticeBoard {
 	public static final Scanner SC = new Scanner(System.in);
 
 	///////////////////////////////////////////////////////
-	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION;
+	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION; //유저 정보도 따로 뺄 것.(임시)
 	private int m_iNoticeType = NOMAR_TYPE;
 	// 만약 공지랑 게시판으로 상속으로 나눠서 할꺼면, 위 필드 2개만 처리하면 됨.
 	private String m_strSubject = "";
@@ -70,7 +71,7 @@ public class NoticeBoard {
 			int noticeType = getNoticeType();
 			if (userPermission == EnumUserPermission.USER_MANAGER_PERMISSION
 					|| userPermission == EnumUserPermission.USER_ADMIN_PERMISSION) {
-				noticeType = (noticeType == NOMAR_TYPE) ? (noticeType = NOTICE_TYPE) : (noticeType = NOMAR_TYPE);
+				noticeType = (noticeType == NOMAR_TYPE) ? (NOTICE_TYPE) : (NOMAR_TYPE);
 				setNoticeType(noticeType);
 				printString("공지사항( ");
 				switch (noticeType) {
@@ -215,6 +216,8 @@ public class NoticeBoard {
 	public static void main(String[] args) {
 		NoticeBoard nb = new NoticeBoard_Notice();
 		nb.run();
+		
+		SC.close();
 	}
 }
 
