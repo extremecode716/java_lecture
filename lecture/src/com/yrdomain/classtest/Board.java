@@ -13,32 +13,40 @@ class EnumUserPermission {
 }
 
 // 게시판 클래스 && 실행 클래스.
-public class NoticeBoard {
+public class Board {
 	// Static field //
 	public static final int NOMAR_TYPE = 0;
 	public static final int NOTICE_TYPE = 1;
 	public static final Scanner SC = new Scanner(System.in);
 
 	///////////////////////////////////////////////////////
-	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION; //유저 정보도 따로 뺄 것.(임시)
+	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION; // 유저 정보도 따로 뺄 것.(임시)
 	private int m_iNoticeType = NOMAR_TYPE;
 	// 만약 공지랑 게시판으로 상속으로 나눠서 할꺼면, 위 필드 2개만 처리하면 됨.
+	private int m_iNo = 0;
+	private int m_iSeq = 0;
 	private String m_strSubject = "";
 	private String m_strBodyText = "";
+	private String m_strWriter = "";
+	private String m_strWiterSeq = "";
+	private String m_strCounter = "";
+
 	///////////////////////////////////////////////////////
 
-	public NoticeBoard() {
+	public Board() {
 		m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION;
 		m_iNoticeType = NOMAR_TYPE;
 		m_strSubject = "";
 		m_strBodyText = "";
+		m_strWriter = "";
 	}
 
-	public NoticeBoard(int _userPermission) {
+	public Board(int _userPermission) {
 		m_iUserPermission = _userPermission;
 		m_iNoticeType = NOMAR_TYPE;
 		m_strSubject = "";
 		m_strBodyText = "";
+		m_strWriter = "";
 	}
 
 	public void run() {
@@ -171,6 +179,36 @@ public class NoticeBoard {
 		return strBodyText;
 	}
 
+	// 목록에 보여줄 데이터 불러오는 함수
+	public void showList() {
+	}
+
+	// 상세화면에 보여줄 데이터 불러오는 함수
+	public void showView(int _seq) {
+	}
+
+	// 등록화면에 보여줄 데이터 불러오는 함수
+	public void showForm() {
+		showView(m_iSeq);
+		procInsert();
+	}
+
+	// 입력 받은 데이터를 디비에 등록하는 프로세스
+	public int procInsert() {
+		return 1;
+	}
+
+	// 선택된 데이터 삭제하는 프로세스 : 실제 데이터베이스 상에서 삭제
+	public int procUpdate(int _seq) {
+		return 1;
+	}
+
+	// 선택된 데이터를 삭제 된 것처럼 업데이트 하는 프로세스:
+	// 실제 데이터는 삭제 되지 않고 남아 있으며 삭제 여부 필드를 n->y 로 처리
+	public int proUelete(int _seq) {
+		return 1;
+	}
+
 	/////////////////////////////////////////
 	public int getUserPermission() {
 		return m_iUserPermission;
@@ -214,17 +252,36 @@ public class NoticeBoard {
 
 	// main
 	public static void main(String[] args) {
-		NoticeBoard nb = new NoticeBoard_Notice();
+		Board nb = new Board_Notice();
 		nb.run();
-		
+
 		SC.close();
 	}
 }
-
+//////////////////// 부모////////////////////
+//String m_strFileName = "";
+//String m_strFileExtension = "";
+//
+//static final int FILE_MAX_SIZE = 50;
+//static final String[] ALLOWED_FILE_EXTENSION = {"gif","png","jpg","tiff"};
+//static final String[] NOT_ALLOWED_FILE_EXTENSION = {"exe", "bat", "sh", "abc"};
+//
+//public void fileUpload() {
+//}
+//
+//public void fileDownload() {
+//}
+//
+//public void fileDelete() {
+//}
+//
+//public void like() {
+//}
+////////////////////////////////////////////////
 //공지
-class NoticeBoard_Notice extends NoticeBoard {
+class Board_Notice extends Board {
 
-	public NoticeBoard_Notice() {
+	public Board_Notice() {
 		super();
 		super.setUserPermission(EnumUserPermission.USER_MANAGER_PERMISSION);
 		super.setNoticeType(NOTICE_TYPE);
@@ -232,9 +289,9 @@ class NoticeBoard_Notice extends NoticeBoard {
 }
 
 //일반
-class NoticeBoard_Nomar extends NoticeBoard {
+class Board_Nomar extends Board {
 
-	public NoticeBoard_Nomar() {
+	public Board_Nomar() {
 		super();
 		super.setUserPermission(EnumUserPermission.USER_GUEST_PERMISSION);
 		super.setNoticeType(NOMAR_TYPE);
