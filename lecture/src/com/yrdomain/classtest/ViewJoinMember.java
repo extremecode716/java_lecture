@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ViewJoinMember {
 	private static EnumJoinMember ejm = EnumJoinMember.JOINMEMBER_FAILED;
 
-
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("---회원가입---");
