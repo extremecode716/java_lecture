@@ -6,15 +6,13 @@ import java.util.List;
 
 //작성자: 김동일
 public class LottoNumbersGenerator {
-	// 자료구조 + 알고리즘 메소드 사용.
 	public static void main(String[] args) {
 		List<Integer> listNumbers = new ArrayList<Integer>();
 		for (int i = 1; i < 46; ++i) {
 			listNumbers.add(i);
 		}
-
-		// shuffle run 2 // shuffle internal logic keyword : for / random / swap
-		Collections.shuffle(listNumbers);
+		
+		// shuffle internal logic keyword : for / random / swap
 		Collections.shuffle(listNumbers);
 
 		// 추첨
