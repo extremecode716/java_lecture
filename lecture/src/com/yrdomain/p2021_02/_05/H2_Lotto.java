@@ -1,10 +1,10 @@
-package com.yrdomain.test;
+package com.yrdomain.p2021_02._05;
 
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LottoNumbersGenerator {
+public class H2_Lotto {
 	public static void main(String[] args) {
 		List<Integer> listNumbers = new ArrayList<Integer>();
 		for (int i = 1; i < 46; ++i) {
