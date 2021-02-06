@@ -1,7 +1,7 @@
 package com.yrdomain.classtest;
 import java.util.Scanner;
 
-// 작성자: 김동일 // 회원가입 실행 클래스 && View 클래스
+// 작성자: ExtremeCode // 회원가입 실행 클래스 && View 클래스
 // 파일: ViewJoinMember.java
 public class ViewJoinMember {
 	private static EnumJoinMember ejm = EnumJoinMember.JOINMEMBER_FAILED;

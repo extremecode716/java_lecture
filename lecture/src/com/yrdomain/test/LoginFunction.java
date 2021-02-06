@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class LoginFunction {
 
 	static final int MAX_SIZE = 25;

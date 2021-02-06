@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class TitleSearch {
 
 	final static int MAX_ROW_COUNT = 10; // 글 라인 개수 : ROW

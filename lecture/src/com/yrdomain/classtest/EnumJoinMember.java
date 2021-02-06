@@ -1,5 +1,5 @@
 package com.yrdomain.classtest;
-// 작성자: 김동일
+// 작성자: ExtremeCode
 // 파일:EnumJoinMember.java
 public enum EnumJoinMember {
 	JOINMEMBER_SUCCEED,

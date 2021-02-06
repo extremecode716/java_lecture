@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.io.IOException;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class Paging {
 	final static int MAX_SIZE = 100;
 	final static int MAX_VIEW_COUNT = 10;

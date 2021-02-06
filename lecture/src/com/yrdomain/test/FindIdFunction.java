@@ -3,7 +3,7 @@ package com.yrdomain.test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class FindIdFunction {
 
 	static final int MAX_SIZE = 50;
@@ -59,7 +59,7 @@ public class FindIdFunction {
 		// 서버 검증
 		// Email 주소로 ID 찾기
 		// ID Email name
-		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "김동일" }; // DB 저장 정보 (중복x)
+		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB 저장 정보 (중복x)
 		// 자바 내부 데이터도 final 해줄 것
 
 		// String 참조형으로 쓰기 위해 배열로 받음

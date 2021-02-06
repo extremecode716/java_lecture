@@ -2,7 +2,7 @@ package com.yrdomain.classtest;
 
 import java.util.Scanner;
 
-// 작성자: 김동일
+// 작성자: ExtremeCode
 // User 접근 권한 // Enum 으로 변경 해도 됨
 class EnumUserPermission {
 	public static final int USER_NO_PERMISSION = 0;

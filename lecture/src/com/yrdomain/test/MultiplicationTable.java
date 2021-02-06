@@ -1,6 +1,6 @@
 package com.yrdomain.test;
 import java.util.Scanner;
-//작성자 : 김동일
+//작성자 : ExtremeCode
 //구구단 출력 (3차원 배열로)
 public class MultiplicationTable {
 	private static final int MAX_SIZE = 10;

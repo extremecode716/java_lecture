@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-//작성자: 김동일 //control
+//작성자: ExtremeCode //control
 //파일:JoinMember.java
 public class JoinMember {
 	private static JoinMember gJoinMember = new JoinMember();

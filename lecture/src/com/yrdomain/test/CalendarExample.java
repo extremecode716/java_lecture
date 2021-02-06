@@ -3,7 +3,7 @@ package com.yrdomain.test;
 import java.util.Calendar;
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class CalendarExample {
 	private static Calendar cal = Calendar.getInstance(); //싱글톤, 현재시간을 가져옴.
 	private static final int SEVEN_DAYS = 7;

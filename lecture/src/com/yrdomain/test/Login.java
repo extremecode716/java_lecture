@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class Login {
 	public static void main(String[] args) {
 		// 서버 검증

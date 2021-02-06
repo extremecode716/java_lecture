@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.util.Arrays;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class Lotto_HelpCode1 {
 
 	public static void main(String[] args) {

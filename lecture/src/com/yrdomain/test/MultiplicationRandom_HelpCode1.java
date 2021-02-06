@@ -1,6 +1,6 @@
 package com.yrdomain.test;
 
-//코드 주석 설명 및 오류수정자 : 김동일 //도와드린 코드
+//코드 주석 설명 및 오류수정자 : ExtremeCode
 public class MultiplicationRandom_HelpCode1 {
 
 	public static void main(String[] args) {

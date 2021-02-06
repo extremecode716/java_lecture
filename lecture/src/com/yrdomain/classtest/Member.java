@@ -1,6 +1,6 @@
 package com.yrdomain.classtest;
 
-// 작성자: 김동일 // model
+// 작성자: ExtremeCode // model
 // 파일: Member.java
 public class Member {
 

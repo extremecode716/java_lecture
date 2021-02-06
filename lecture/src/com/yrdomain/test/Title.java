@@ -1,6 +1,6 @@
 package com.yrdomain.test;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class Title {
 
 	public static void main(String[] args) {

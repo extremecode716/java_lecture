@@ -3,13 +3,13 @@ package com.yrdomain.test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//작성자 : 김동일
+//작성자 : ExtremeCode
 public class FindId {
 	public static void main(String[] args) {
 		// 서버 검증
 		// Email 주소로 ID 찾기
 		//							ID				Email				name
-		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "김동일" }; // DB 저장 정보 (중복x) //자바 내부 데이터도 final 할 것.
+		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB 저장 정보 (중복x) //자바 내부 데이터도 final 할 것.
 		final int MAX_SIZE = 50;
 
 		String strInputEmail = null;

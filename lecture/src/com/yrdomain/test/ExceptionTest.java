@@ -1,6 +1,6 @@
 package com.yrdomain.test;
 
-// 작성자: 김동일
+// 작성자: ExtremeCode
 public class ExceptionTest {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
