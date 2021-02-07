@@ -1,6 +1,6 @@
 package com.yrdomain.test;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class CalendarData {
 	int m_iYear;
 	int m_iMon;
@@ -13,7 +13,7 @@ public class CalendarData {
 	int m_iMin;
 	int m_iSec;
 	
-	int m_iDayOfWeek;  //¿äÀÏ SUNDAY 1
-	int m_iDayOfStartWeek; // ´Ş·ÂÀÇ ½ÃÀÛ ¿äÀÏ
-	int m_iDayOfEndWeek; // ´Ş·ÂÀÇ ³¡ ¿äÀÏ
+	int m_iDayOfWeek;  //ìš”ì¼ SUNDAY 1
+	int m_iDayOfStartWeek; // ë‹¬ë ¥ì˜ ì‹œì‘ ìš”ì¼
+	int m_iDayOfEndWeek; // ë‹¬ë ¥ì˜ ë ìš”ì¼
 }

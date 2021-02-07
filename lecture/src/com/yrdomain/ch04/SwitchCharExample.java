@@ -9,14 +9,14 @@ public class SwitchCharExample {
 		switch (grade) {
 		case 'A':
 		case 'a':
-			System.out.println("¿ì¼ö È¸¿øÀÔ´Ï´Ù.");
+			System.out.println("ìš°ìˆ˜ íšŒì›ì…ë‹ˆë‹¤.");
 			break;
 		case 'B':
 		case 'b':
-			System.out.println("ÀÏ¹İ È¸¿øÀÔ´Ï´Ù.");
+			System.out.println("ì¼ë°˜ íšŒì›ì…ë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("¼Õ´ÔÀÔ´Ï´Ù.");
+			System.out.println("ì†ë‹˜ì…ë‹ˆë‹¤.");
 		}
 	}
 

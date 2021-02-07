@@ -5,7 +5,7 @@ import java.util.Objects;
 public class NullExample {
 
 	public static void main(String[] args) {
-		String str1 = "È«±æµ¿";
+		String str1 = "í™ê¸¸ë™";
 		String str2 = null;
 		String name = null;
 		System.out.println(Objects.requireNonNull(str1));
@@ -18,14 +18,14 @@ public class NullExample {
 		}
 		
 		try {
-			name = Objects.requireNonNull(str2, "ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù.");
+			name = Objects.requireNonNull(str2, "ì´ë¦„ì´ ì—†ìŠµë‹ˆë‹¤.");
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 			System.out.println(name);
 		}
 		
 		try {
-			name= Objects.requireNonNull(str2, ()->"ÀÌ¸§ÀÌ ¾ø´Ù."); //¶÷´Ù½Ä Supplier<String> msgSupplier
+			name= Objects.requireNonNull(str2, ()->"ì´ë¦„ì´ ì—†ë‹¤."); //ëŒë‹¤ì‹ Supplier<String> msgSupplier
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 			System.out.println(name);

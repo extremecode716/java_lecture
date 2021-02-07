@@ -17,7 +17,7 @@ public class SmartPhoneExample {
 	
 	
 	public static void main(String[] args) {
-		SmartPhone myPhone = new SmartPhone("±¸±Û","¾Èµå·ÎÀÌµå");
+		SmartPhone myPhone = new SmartPhone("êµ¬ê¸€","ì•ˆë“œë¡œì´ë“œ");
 
 		String strObj = myPhone.toString();
 		System.out.println(strObj);

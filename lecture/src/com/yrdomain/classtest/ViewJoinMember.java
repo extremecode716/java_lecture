@@ -1,38 +1,38 @@
 package com.yrdomain.classtest;
 import java.util.Scanner;
 
-// ÀÛ¼ºÀÚ: ExtremeCode // È¸¿ø°¡ÀÔ ½ÇÇà Å¬·¡½º && View Å¬·¡½º
-// ÆÄÀÏ: ViewJoinMember.java
+// ì‘ì„±ì: ExtremeCode // íšŒì›ê°€ì… ì‹¤í–‰ í´ë˜ìŠ¤ && View í´ë˜ìŠ¤
+// íŒŒì¼: ViewJoinMember.java
 public class ViewJoinMember {
 	private static EnumJoinMember ejm = EnumJoinMember.JOINMEMBER_FAILED;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("---È¸¿ø°¡ÀÔ---");
-		// ¼º
+		System.out.println("---íšŒì›ê°€ì…---");
+		// ì„±
 		while (true) {
 			if (IsInputLastName(sc))
 				break;
 		}
-		// ÀÌ¸§
+		// ì´ë¦„
 		while (true) {
 			if (IsInputFirstName(sc))
 				break;
 		}
-		// ÀÌ¸ŞÀÏ ÁÖ¼Ò
+		// ì´ë©”ì¼ ì£¼ì†Œ
 		while (true) {
 			if (IsInputEmailID(sc))
 				break;
 		}
-		// ºñ¹Ğ¹øÈ£ ÀÔ·Â
+		// ë¹„ë°€ë²ˆí˜¸ ì…ë ¥
 		while (true) {
 			if (IsInputPw(sc))
 				break;
 		}
-		// ¾à°üµ¿ÀÇ
+		// ì•½ê´€ë™ì˜
 		JoinMember.getInstance().getMemberData().setTermsOfService(true);
 		if (JoinMember.getInstance().submit()) {
-			System.out.println("-----È¸¿ø°¡ÀÔ ¼º°ø-----");
+			System.out.println("-----íšŒì›ê°€ì… ì„±ê³µ-----");
 			ejm = EnumJoinMember.JOINMEMBER_SUCCEED;
 		}
 		sc.close();
@@ -45,10 +45,10 @@ public class ViewJoinMember {
 		ejm = JoinMember.getInstance().checkEmailID(strUserInput);
 		switch (ejm) {
 		case REGULAR_EMAILID_FAILED:
-			System.out.println("ÀÌ¸ŞÀÏ Çü½Ä¿¡ ¸Â°Ô ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("ì´ë©”ì¼ í˜•ì‹ì— ë§ê²Œ ì…ë ¥í•˜ì„¸ìš”!");
 			return false;
 		case FIND_EMAILID_SUCCED:
-			System.out.println("ÀÌ¸ŞÀÏID °¡ Áßº¹µÇ¾ú½À´Ï´Ù!");
+			System.out.println("ì´ë©”ì¼ID ê°€ ì¤‘ë³µë˜ì—ˆìŠµë‹ˆë‹¤!");
 			return false;
 		default:
 			break;
@@ -59,20 +59,20 @@ public class ViewJoinMember {
 
 	private static boolean IsInputPw(final Scanner _sc) {
 		String strUserInput = null;
-		System.out.println("Æ¯¼ö¹®ÀÚ,¿µ¹® ¼ıÀÚ Á¶ÇÕ(8~20)");
+		System.out.println("íŠ¹ìˆ˜ë¬¸ì,ì˜ë¬¸ ìˆ«ì ì¡°í•©(8~20)");
 		System.out.print("Pw : ");
 		strUserInput = _sc.nextLine();
 		ejm = JoinMember.getInstance().checkPw(strUserInput);
 		switch (ejm) {
 		case REGULAR_PW_FAILED:
-			System.out.println("pw Çü½Ä¿¡ ¸Â°Ô ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("pw í˜•ì‹ì— ë§ê²Œ ì…ë ¥í•˜ì„¸ìš”!");
 			return false;
 		default:
 			break;
 		}
-		System.out.print("Pw ÀçÈ®ÀÎ : ");
+		System.out.print("Pw ì¬í™•ì¸ : ");
 		if (!strUserInput.equals(_sc.nextLine())) {
-			System.out.println("ºñ¹Ğ¹øÈ£°¡ ÀÏÄ¡ ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("ë¹„ë°€ë²ˆí˜¸ê°€ ì¼ì¹˜ í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 			return false;
 		}
 
@@ -82,15 +82,15 @@ public class ViewJoinMember {
 
 	private static boolean IsInputLastName(final Scanner _sc) {
 		String strUserInput = null;
-		System.out.print("¼º (LastName) : ");
+		System.out.print("ì„± (LastName) : ");
 		strUserInput = _sc.nextLine();
 		ejm = JoinMember.getInstance().checkLastName(strUserInput);
 		switch (ejm) {
 		case REGULAR_LASTNAME_FAILED:
-			System.out.println("¼ºÀ» Çü½Ä¿¡ ¸Â°Ô ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("ì„±ì„ í˜•ì‹ì— ë§ê²Œ ì…ë ¥í•˜ì„¸ìš”!");
 			return false;
 		case FIND_LASTNAME_SUCCED:
-			System.out.println("¼ºÀÌ Áßº¹µÇ¾ú½À´Ï´Ù!");
+			System.out.println("ì„±ì´ ì¤‘ë³µë˜ì—ˆìŠµë‹ˆë‹¤!");
 			return false;
 		default:
 			break;
@@ -101,15 +101,15 @@ public class ViewJoinMember {
 
 	private static boolean IsInputFirstName(final Scanner _sc) {
 		String strUserInput = null;
-		System.out.print("ÀÌ¸§ (FirstName) : ");
+		System.out.print("ì´ë¦„ (FirstName) : ");
 		strUserInput = _sc.nextLine();
 		ejm = JoinMember.getInstance().checkFirstName(strUserInput);
 		switch (ejm) {
 		case REGULAR_FIRSTNAME_FAILED:
-			System.out.println("ÀÌ¸§ Çü½Ä¿¡ ¸Â°Ô ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("ì´ë¦„ í˜•ì‹ì— ë§ê²Œ ì…ë ¥í•˜ì„¸ìš”!");
 			return false;
 		case FIND_FIRSTNAME_SUCCED:
-			System.out.println("ÀÌ¸§ÀÌ Áßº¹µÇ¾ú½À´Ï´Ù!");
+			System.out.println("ì´ë¦„ì´ ì¤‘ë³µë˜ì—ˆìŠµë‹ˆë‹¤!");
 			return false;
 		default:
 			break;

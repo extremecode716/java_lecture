@@ -15,7 +15,7 @@ class A{
 		this.name = _name;
 	}
 	protected A hi() {
-		System.out.println("ºÎ¸ğ");
+		System.out.println("ë¶€ëª¨");
 		return this;
 	}
 }
@@ -28,7 +28,7 @@ class B extends A{
 	}
 	@Override
 	public B hi() {
-		System.out.println("ÀÚ½Ä");
+		System.out.println("ìì‹");
 		return this;
 	}
 }

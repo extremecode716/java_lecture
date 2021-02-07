@@ -7,7 +7,7 @@ public class GarbageValueExample {
 		byte var1_1 = 125;
 		int var2_1 = 125;
 		
-		//ÃÖ»óÀ§ ºñÆ® º¯°æ.
+		//ìµœìƒìœ„ ë¹„íŠ¸ ë³€ê²½.
 		for (int i = 0; i < 5; i++) {
 			var1_1++;
 			var2_1++;

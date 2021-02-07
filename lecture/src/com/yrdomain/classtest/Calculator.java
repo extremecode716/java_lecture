@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.List;
 
-// ÈÄÀ§Ç¥±â¹ıÀ¸·Î °è»êÇÒ °è»ê±â Å¬·¡½º.
+// í›„ìœ„í‘œê¸°ë²•ìœ¼ë¡œ ê³„ì‚°í•  ê³„ì‚°ê¸° í´ë˜ìŠ¤.
 public class Calculator {
 	private static Scanner sc = new Scanner(System.in);
 
@@ -22,7 +22,7 @@ public class Calculator {
 		m_strInputData = null;
 		m_strResult = null;
 
-		printString("»ı¼ºÀÚ È£Ãâ");
+		printString("ìƒì„±ì í˜¸ì¶œ");
 	}
 
 	public Calculator(String _strBrandName) {
@@ -31,11 +31,11 @@ public class Calculator {
 		m_strInputData = null;
 		m_strResult = null;
 
-		printString("»ı¼ºÀÚ È£Ãâ (ºê·£µå: " + m_strBrandName + ")");
+		printString("ìƒì„±ì í˜¸ì¶œ (ë¸Œëœë“œ: " + m_strBrandName + ")");
 	}
 
 	/////////////////////
-	// ½ÇÇà ·ÎÁ÷
+	// ì‹¤í–‰ ë¡œì§
 	public boolean run() {
 		if (!checkPowerSwitch())
 			return false;
@@ -58,7 +58,7 @@ public class Calculator {
 		listOperators.clear();
 	}
 
-	// ¼ıÀÚ¿Í ¿¬»êÀÚ¸¦ ºĞ¸®½ÃÅ°´Â ¸Ş¼Òµå (ÇöÀç ÁßÀ§Ç¥±â¹ı)
+	// ìˆ«ìì™€ ì—°ì‚°ìë¥¼ ë¶„ë¦¬ì‹œí‚¤ëŠ” ë©”ì†Œë“œ (í˜„ì¬ ì¤‘ìœ„í‘œê¸°ë²•)
 	private void spliteInputDataAddListNumbersAndOperators() {
 		boolean bNumberContinue = false;
 		int iNumberStartIndex = 0;
@@ -103,46 +103,46 @@ public class Calculator {
 			listNumbers.add(m_strInputData.substring(iNumberStartIndex, iNumberEndIndex));
 			bNumberContinue = false;
 		}
-		printString("¼ıÀÚ¿Í ¿¬»êÀÚ¸¦ ºĞ¸®½ÃÅ°´Â ¸Ş¼Òµå ½ÇÇà(ÇöÀç ÁßÀ§Ç¥±â¹ı)");
+		printString("ìˆ«ìì™€ ì—°ì‚°ìë¥¼ ë¶„ë¦¬ì‹œí‚¤ëŠ” ë©”ì†Œë“œ ì‹¤í–‰(í˜„ì¬ ì¤‘ìœ„í‘œê¸°ë²•)");
 	}
 
-	// µ¥ÀÌÅÍ ÀÔ·Â ¸Ş¼Òµå
+	// ë°ì´í„° ì…ë ¥ ë©”ì†Œë“œ
 	public boolean inputData() {
-		printString("¡é°è»ê±â ÀÔ·Â¡é");
-		// ºó °ø°£ ³¯¸°´Ù
+		printString("â†“ê³„ì‚°ê¸° ì…ë ¥â†“");
+		// ë¹ˆ ê³µê°„ ë‚ ë¦°ë‹¤
 		m_strInputData = sc.nextLine().replaceAll(" ", "");
-		// ¹®ÀÚ¿­À» °Ë»çÇÏ¿© ¸Â´Â Ç¥ÇöÀÎÁö °Ë»ç ÁøÇà.
+		// ë¬¸ìì—´ì„ ê²€ì‚¬í•˜ì—¬ ë§ëŠ” í‘œí˜„ì¸ì§€ ê²€ì‚¬ ì§„í–‰.
 		// return false;
 
-		printString("ÀÔ·Â ¹Ş¾Ò´Ù");
+		printString("ì…ë ¥ ë°›ì•˜ë‹¤");
 
 		return true;
 	}
 
-	// °á°ú°ª Ãâ·ÂÇÑ´Ù.
+	// ê²°ê³¼ê°’ ì¶œë ¥í•œë‹¤.
 	public void printResult() {
 		if (m_strResult == null)
 			return;
 
-		printString("°á°ú°ª: " + m_strResult);
+		printString("ê²°ê³¼ê°’: " + m_strResult);
 	}
 
-	// °è»êÇÑ´Ù.
+	// ê³„ì‚°í•œë‹¤.
 	private boolean calculate() {
-		printString("°è»ê ¸Ş¼Òµå ½ÇÇà");
+		printString("ê³„ì‚° ë©”ì†Œë“œ ì‹¤í–‰");
 
-		// °è»êÀÌ µÇ¸é ÇÊµå¿¡ ¹Ù·Î ¶§·Á ³ÖÀ» °ÍÀÓ.
+		// ê³„ì‚°ì´ ë˜ë©´ í•„ë“œì— ë°”ë¡œ ë•Œë ¤ ë„£ì„ ê²ƒì„.
 		return true;
 	}
 
-	// °è»ê±â¸¦ Å°°í ²ö´Ù.
+	// ê³„ì‚°ê¸°ë¥¼ í‚¤ê³  ëˆë‹¤.
 	public boolean powerSwitch() {
 		m_bPowerSwitch = (m_bPowerSwitch == false) ? (true) : (false);
 
 		if (m_bPowerSwitch) {
-			printString("Àü¿ø on");
+			printString("ì „ì› on");
 		} else {
-			printString("Àü¿ø off");
+			printString("ì „ì› off");
 		}
 
 		return m_bPowerSwitch;
@@ -150,7 +150,7 @@ public class Calculator {
 
 	private boolean checkPowerSwitch() {
 		if (!m_bPowerSwitch) {
-			printString("Àü¿øÀ» Å°¼¼¿ä.");
+			printString("ì „ì›ì„ í‚¤ì„¸ìš”.");
 			return false;
 		}
 		return true;
@@ -160,7 +160,7 @@ public class Calculator {
 		System.out.println(_str);
 	}
 
-	// ÈÄÀ§¿¬»êÀÚ·Î º¯°æ.
+	// í›„ìœ„ì—°ì‚°ìë¡œ ë³€ê²½.
 	private boolean changeInfixToPrefix() {
 
 		return true;

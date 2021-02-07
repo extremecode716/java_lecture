@@ -10,8 +10,8 @@ public class IntExample {
 		System.out.println(octNumber);
 		System.out.println(hexNumber);
 		
-		//float : ºÎÈ£(1bit) + Áö¼ö(8bit) + °¡¼ö(23bit) = 32bit = 4byte
-		//double : ºÎÈ£(1bit) + Áö¼ö(11bit) + °¡¼ö(52bit) = 64bit = 8byte
+		//float : ë¶€í˜¸(1bit) + ì§€ìˆ˜(8bit) + ê°€ìˆ˜(23bit) = 32bit = 4byte
+		//double : ë¶€í˜¸(1bit) + ì§€ìˆ˜(11bit) + ê°€ìˆ˜(52bit) = 64bit = 8byte
 		
 	}
 }

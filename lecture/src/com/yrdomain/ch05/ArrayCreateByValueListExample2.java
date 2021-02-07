@@ -10,10 +10,10 @@ public class ArrayCreateByValueListExample2 {
 		for (int i = 0; i < 3; ++i) {
 			sum1 += scores[i];
 		}
-		System.out.println("ÃÑÇÕ : " + sum1);
+		System.out.println("ì´í•© : " + sum1);
 
 		int sum2 = add(new int[] { 83, 90, 87 });
-		System.out.println("ÃÑÇÕ : " + sum2);
+		System.out.println("ì´í•© : " + sum2);
 		System.out.println();
 		
 	}

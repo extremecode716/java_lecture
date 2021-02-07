@@ -2,7 +2,7 @@ package com.yrdomain.ch02;
 
 
 /*
- * Byte.class // class·Î ÄÄÆÄÀÏµÈ ÆÄÀÏµµ ¹Ù·Î È®ÀÎ °¡´ÉÇÏ³×.
+ * Byte.class // classë¡œ ì»´íŒŒì¼ëœ íŒŒì¼ë„ ë°”ë¡œ í™•ì¸ ê°€ëŠ¥í•˜ë„¤.
  public final class Byte extends Number implements Comparable<Byte> {
 
     public static final byte   MIN_VALUE = -128;
@@ -14,8 +14,8 @@ public class CheckValueBeforeCasting {
 		int i = 128;
 
 		if ((i < Byte.MIN_VALUE) || (i > Byte.MAX_VALUE)) {
-			System.out.println("byte Å¸ÀÔÀ¸·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
-			System.out.println("°ªÀ» ´Ù½Ã È®ÀÎÇØ ÁÖ¼¼¿ä");
+			System.out.println("byte íƒ€ì…ìœ¼ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			System.out.println("ê°’ì„ ë‹¤ì‹œ í™•ì¸í•´ ì£¼ì„¸ìš”");
 		}
 		else {
 			byte b = (byte) i;

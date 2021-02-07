@@ -12,9 +12,9 @@ public class ArrayIndexOutOfBoundsExceptionExample {
 			System.out.println("args[1]: " + data2);
 			
 		}else {
-			System.out.println("[½ÇÇà ¹æ¹ý]");
+			System.out.println("[ì‹¤í–‰ ë°©ë²•]");
 			System.out.println("java ArrayIndexOutOfBoundsExceptionExample");
-			System.out.println("°ª1 °ª2");
+			System.out.println("ê°’1 ê°’2");
 		}
 	}
 

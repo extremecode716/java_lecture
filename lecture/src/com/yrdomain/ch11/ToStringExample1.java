@@ -5,12 +5,12 @@ import java.util.Objects;
 public class ToStringExample1 {
 
 	public static void main(String[] args) {
-		String str1 = "È«±æµ¿";
+		String str1 = "í™ê¸¸ë™";
 		String str2 = null;
 		
 		System.out.println(Objects.toString(str1));
 		System.out.println(Objects.toString(str2));
-		System.out.println(Objects.toString(str2, "ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù."));
+		System.out.println(Objects.toString(str2, "ì´ë¦„ì´ ì—†ìŠµë‹ˆë‹¤."));
 	}
 
 }

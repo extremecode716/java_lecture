@@ -11,7 +11,7 @@ public class EnumWeekExample {
 		Calendar cal = Calendar.getInstance();
 		
 		System.out.println(cal);
-		int week = cal.get(Calendar.DAY_OF_WEEK); // ÀÏ¿äÀÏ ~ Åä¿äÀÏ 1~7±îÁöÀÇ ¼ıÀÚ¸¦ ¸®ÅÏ
+		int week = cal.get(Calendar.DAY_OF_WEEK); // ì¼ìš”ì¼ ~ í† ìš”ì¼ 1~7ê¹Œì§€ì˜ ìˆ«ìë¥¼ ë¦¬í„´
 
 		switch (week) {
 		case 1:
@@ -37,12 +37,12 @@ public class EnumWeekExample {
 			break;
 		}
 
-		System.out.println("¿À´Ã ¿äÀÏ: " + today);
+		System.out.println("ì˜¤ëŠ˜ ìš”ì¼: " + today);
 
 		if (today == Week.SUNDAY) {
-			System.out.println("ÀÏ¿äÀÏ¿¡´Â Ãà±¸¸¦ ÇÕ´Ï´Ù.");
+			System.out.println("ì¼ìš”ì¼ì—ëŠ” ì¶•êµ¬ë¥¼ í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¿­½ÉÈ÷ ÀÚ¹Ù °øºÎÇÕ´Ï´Ù.");
+			System.out.println("ì—´ì‹¬íˆ ìë°” ê³µë¶€í•©ë‹ˆë‹¤.");
 		}
 
 	}

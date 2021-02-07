@@ -6,10 +6,10 @@ public class BitReverseOperatorExample {
 		String str = Integer.toBinaryString(value);
 
 		/*
-		//ºñÈ¿À²Àû 
-		 * "0" + str; <- JVMÀÌ ¾ó¸¶³ª ÃÖÀûÈ­ ÇØÁÙÁö ¸ğ¸§. ¸Ş¸ğ¸®¸¦ ¿­¾îº¸¸é ¾Ë¼öÀÖÀ»ÅÙµ¥...ÀÌÅ¬¸³½º Áö¿ø ¾ÈÇØÁÖ´Â°Í °°´Ù.
-		 * 1¹ø µ¹¶§¸¶´Ù GC¿¡ StringÀÌ µé¾î°¡°í, °´Ã¼¸¦ »ı¼º ÇÒ °ÍÀ¸·Î ¿¹»ó.
-		 * JDK 1.5 ÀÌ»ó ¹öÀüºÎÅÍ String += Àº StringBuilder·Î µ¿ÀÛÇÑ´Ù°íÇÔ.
+		//ë¹„íš¨ìœ¨ì  
+		 * "0" + str; <- JVMì´ ì–¼ë§ˆë‚˜ ìµœì í™” í•´ì¤„ì§€ ëª¨ë¦„. ë©”ëª¨ë¦¬ë¥¼ ì—´ì–´ë³´ë©´ ì•Œìˆ˜ìˆì„í…ë°...ì´í´ë¦½ìŠ¤ ì§€ì› ì•ˆí•´ì£¼ëŠ”ê²ƒ ê°™ë‹¤.
+		 * 1ë²ˆ ëŒë•Œë§ˆë‹¤ GCì— Stringì´ ë“¤ì–´ê°€ê³ , ê°ì²´ë¥¼ ìƒì„± í•  ê²ƒìœ¼ë¡œ ì˜ˆìƒ.
+		 * JDK 1.5 ì´ìƒ ë²„ì „ë¶€í„° String += ì€ StringBuilderë¡œ ë™ì‘í•œë‹¤ê³ í•¨.
 		while(str.length() < 32) {
 			str = "0" + str;
 		}
@@ -39,18 +39,18 @@ public class BitReverseOperatorExample {
 		int v2 = ~v1;
 		int v3 = ~v1 + 1;
 		
-		System.out.println(toBinaryString(v1) + "(½ÊÁø¼ö: " + v1 + ")");
-		System.out.println(toBinaryString(v2) + "(½ÊÁø¼ö: " + v2 + ")");
-		System.out.println(toBinaryString(v3) + "(½ÊÁø¼ö: " + v3 + ")");
+		System.out.println(toBinaryString(v1) + "(ì‹­ì§„ìˆ˜: " + v1 + ")");
+		System.out.println(toBinaryString(v2) + "(ì‹­ì§„ìˆ˜: " + v2 + ")");
+		System.out.println(toBinaryString(v3) + "(ì‹­ì§„ìˆ˜: " + v3 + ")");
 		System.out.println();
 		
 		int v4 = -10;
 		int v5 = ~v4;
 		int v6 = ~v4 + 1;
 		
-		System.out.println(toBinaryString(v4) + " (½ÊÁø¼ö: " + v4 + ")");
-		System.out.println(toBinaryString(v5) + " (½ÊÁø¼ö: " + v5 + ")");
-		System.out.println(toBinaryString(v6) + " (½ÊÁø¼ö: " + v6 + ")");
+		System.out.println(toBinaryString(v4) + " (ì‹­ì§„ìˆ˜: " + v4 + ")");
+		System.out.println(toBinaryString(v5) + " (ì‹­ì§„ìˆ˜: " + v5 + ")");
+		System.out.println(toBinaryString(v6) + " (ì‹­ì§„ìˆ˜: " + v6 + ")");
 	}
 
 }

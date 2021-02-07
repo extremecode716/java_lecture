@@ -4,15 +4,15 @@ public class Calculator2Example {
 	public static void main(String[] args) {
 		Calculator2 myCalcu = new Calculator2();
 
-		// Á¤»ç°¢ÇüÀÇ ³ĞÀÌ ±¸ÇÏ±â
+		// ì •ì‚¬ê°í˜•ì˜ ë„“ì´ êµ¬í•˜ê¸°
 		double result1 = myCalcu.areaRectangle(10);
 
-		// Á÷»ç°¢ÇüÀÇ ³ĞÀÌ ±¸ÇÏ±â
+		// ì§ì‚¬ê°í˜•ì˜ ë„“ì´ êµ¬í•˜ê¸°
 		double result2 = myCalcu.areaRectangle(10, 20);
 
-		// °á°ú Ãâ·Â
-		System.out.println("Á¤»ç°¢Çü ³ĞÀÌ=" + result1);
-		System.out.println("Á÷»ç°¢Çü ³ĞÀÌ=" + result2);
+		// ê²°ê³¼ ì¶œë ¥
+		System.out.println("ì •ì‚¬ê°í˜• ë„“ì´=" + result1);
+		System.out.println("ì§ì‚¬ê°í˜• ë„“ì´=" + result2);
 	}
 
 }

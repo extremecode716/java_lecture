@@ -1,32 +1,32 @@
 package com.yrdomain.ch06;
 
 public class Car1 {
-	// ÇÊµå
+	// í•„ë“œ
 	int gas;
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 
-	// ¸Ş¼Òµå
+	// ë©”ì†Œë“œ
 	void setGas(int gas) {
 		this.gas = gas;
 	}
 
 	boolean isLefGas() {
 		if (gas == 0) {
-			System.out.println("gas°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("gasê°€ ì—†ìŠµë‹ˆë‹¤.");
 			return false;
 		}
-		System.out.println("gas°¡ ÀÖ½À´Ï´Ù");
+		System.out.println("gasê°€ ìˆìŠµë‹ˆë‹¤");
 		return true;
 	}
 
 	void run() {
 		while (true) {
 			if (gas > 0) {
-				System.out.println("´Ş¸³´Ï´Ù.(gasÀÜ·®:" + gas + ")");
+				System.out.println("ë‹¬ë¦½ë‹ˆë‹¤.(gasì”ëŸ‰:" + gas + ")");
 				gas -= 1;
 			} else {
-				System.out.println("¸ØÃä´Ï´Ù.(gasÀÜ·®:" + gas + ")");
+				System.out.println("ë©ˆì¶¥ë‹ˆë‹¤.(gasì”ëŸ‰:" + gas + ")");
 				return;
 			}
 		}

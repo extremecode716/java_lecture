@@ -25,15 +25,15 @@ public class Member {
 		Member obj3 = new Member("red");
 		
 		if(obj1.equals(obj2)) {
-			System.out.println("obj1°ú obj2´Â µ¿µîÇÕ´Ï´Ù.");
+			System.out.println("obj1ê³¼ obj2ëŠ” ë™ë“±í•©ë‹ˆë‹¤.");
 		}else {
-			System.out.println("obj1°ú obj2´Â µ¿µîÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("obj1ê³¼ obj2ëŠ” ë™ë“±í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 		if(obj1.equals(obj3)) {
-			System.out.println("obj1°ú obj3Àº µ¿µîÇÕ´Ï´Ù.");
+			System.out.println("obj1ê³¼ obj3ì€ ë™ë“±í•©ë‹ˆë‹¤.");
 		}else {
-			System.out.println("obj1°ú obj3Àº µ¿µîÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("obj1ê³¼ obj3ì€ ë™ë“±í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 
 	}

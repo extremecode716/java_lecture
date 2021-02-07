@@ -1,15 +1,15 @@
 package com.yrdomain.ch02;
 
-// 49ÂÊ
+// 49ìª½
 public class BooleanExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		boolean stop = true;
 		if(stop) 
-			System.out.println("ÁßÁöÇÕ´Ï´Ù");
+			System.out.println("ì¤‘ì§€í•©ë‹ˆë‹¤");
 		else
-			System.out.println("½ÃÀÛÇÕ´Ï´Ù");
+			System.out.println("ì‹œìž‘í•©ë‹ˆë‹¤");
 			
 	}
 

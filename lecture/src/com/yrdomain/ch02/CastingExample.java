@@ -2,7 +2,7 @@ package com.yrdomain.ch02;
 
 public class CastingExample {
 	public static void main(String[] args) {
-		// µ¥ÀÌÅÍ ¼Õ½Ç
+		// ë°ì´í„° ì†ì‹¤
 		int intValue = 44032;
 		char charValue = (char) intValue;
 		System.out.println(charValue);

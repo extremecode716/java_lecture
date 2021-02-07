@@ -4,49 +4,49 @@ import com.yrdomain.classtest.a_package.Parrent;
 
 
 public class Child extends Parrent {
-	//public String m_strParrentPublic = "ChildÀÇ ¿À¹ö¶óÀÌµùµÈ public ÇÊµå"; // super.ÇÊµå (È¥µ·À» °¡Á®¿À´Â ¹æ¹ıÀÌ´Ù.ÀÌ Ã³·³ »ç¿ëÇÏÁö ¸»ÀÚ.)
-	public String m_strChildPublic = "ChildÀÇ public ÇÊµå";
-	protected String m_strChildProtected = "ChildÀÇ protected ÇÊµå";
-	String m_strChildDefault = "ChildÀÇ default ÇÊµå";
-	private String m_strChildPrivate = "ChildÀÇ private ÇÊµå";
+	//public String m_strParrentPublic = "Childì˜ ì˜¤ë²„ë¼ì´ë”©ëœ public í•„ë“œ"; // super.í•„ë“œ (í˜¼ëˆì„ ê°€ì ¸ì˜¤ëŠ” ë°©ë²•ì´ë‹¤.ì´ ì²˜ëŸ¼ ì‚¬ìš©í•˜ì§€ ë§ì.)
+	public String m_strChildPublic = "Childì˜ public í•„ë“œ";
+	protected String m_strChildProtected = "Childì˜ protected í•„ë“œ";
+	String m_strChildDefault = "Childì˜ default í•„ë“œ";
+	private String m_strChildPrivate = "Childì˜ private í•„ë“œ";
 
 	public Child() {
 		super();
-		System.out.println("ÀÚ½Ä »ı¼ºÀÚ È£Ãâ");
+		System.out.println("ìì‹ ìƒì„±ì í˜¸ì¶œ");
 		System.out.println(m_strParrentPublic);
 		System.out.println(m_strParrentProtected);
-		// System.out.println(m_strParrentDefault); //¿¡·¯
+		// System.out.println(m_strParrentDefault); //ì—ëŸ¬
 	}
 
 	public void methodChildPublic() {
-		System.out.println("ChildÀÇ public ¸Ş¼Òµå");
+		System.out.println("Childì˜ public ë©”ì†Œë“œ");
 	}
 
 	protected void methodChildProtected() {
-		System.out.println("ChildÀÇ protected ¸Ş¼Òµå");
+		System.out.println("Childì˜ protected ë©”ì†Œë“œ");
 	}
 
 	void methodChildDefault() {
-		System.out.println("ChildÀÇ Default ¸Ş¼Òµå");
+		System.out.println("Childì˜ Default ë©”ì†Œë“œ");
 	}
 
 	private void methodChildPrivate() {
-		System.out.println("ChildÀÇ private ¸Ş¼Òµå");
+		System.out.println("Childì˜ private ë©”ì†Œë“œ");
 	}
 
 	@Override
 	public void methodParrentPublic() {
-		System.out.println("ChildÀÇ ¿À¹ö¶óÀÌµù public ¸Ş¼Òµå");
+		System.out.println("Childì˜ ì˜¤ë²„ë¼ì´ë”© public ë©”ì†Œë“œ");
 	}
 
 	@Override
 	public void methodParrentProtected() {
-		System.out.println("ChildÀÇ ¿À¹ö¶óÀÌµù protected ¸Ş¼Òµå");
+		System.out.println("Childì˜ ì˜¤ë²„ë¼ì´ë”© protected ë©”ì†Œë“œ");
 	}
-	// ¿¡·¯
+	// ì—ëŸ¬
 //	@Override
 //	public void methodParrentDefault() {
-//		System.out.println("ChildÀÇ ¿À¹ö¶óÀÌµù Default ¸Ş¼Òµå");
+//		System.out.println("Childì˜ ì˜¤ë²„ë¼ì´ë”© Default ë©”ì†Œë“œ");
 //	}
 
 }

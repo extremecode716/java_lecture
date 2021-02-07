@@ -2,8 +2,8 @@ package com.yrdomain.test;
 
 import java.lang.instrument.Instrumentation;
 
-// JVM¿¡ ¼±Çà Ã³¸®°¡ ÇÊ¿äÇÏ´Ù°í ÇÑ´Ù... Q)
-// MANIFEST.MF->Premain-Class: InstrumentationAgent Ãß°¡
+// JVMì— ì„ í–‰ ì²˜ë¦¬ê°€ í•„ìš”í•˜ë‹¤ê³  í•œë‹¤... Q)
+// MANIFEST.MF->Premain-Class: InstrumentationAgent ì¶”ê°€
 // java -javaagent:InstrumentationAgent.jar ... 
 /**
  * Simple example of an Instrumentation Agent adapted from blog post

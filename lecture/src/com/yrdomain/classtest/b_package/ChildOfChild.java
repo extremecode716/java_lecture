@@ -3,7 +3,7 @@ package com.yrdomain.classtest.b_package;
 public class ChildOfChild extends Child{
 
 	public ChildOfChild() {
-		System.out.println("ÀÚ½ÄÀÇ ÀÚ½Ä »ı¼ºÀÚ È£Ãâ");
+		System.out.println("ìì‹ì˜ ìì‹ ìƒì„±ì í˜¸ì¶œ");
 	}
 
 	@Override
@@ -29,7 +29,7 @@ public class ChildOfChild extends Child{
 		// TODO Auto-generated method stub
 		super.methodParrentPublic();
 		
-		System.out.println("ChildOfChildÀÇ ¿À¹ö¶óÀÌµù public ¸Ş¼Òµå");
+		System.out.println("ChildOfChildì˜ ì˜¤ë²„ë¼ì´ë”© public ë©”ì†Œë“œ");
 	}
 
 	@Override

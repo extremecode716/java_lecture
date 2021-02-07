@@ -26,13 +26,13 @@ public class Key {
 	}
 	
 	public static void main(String[] args) {
-		//Key °´Ã¼¸¦ ½Äº°Å°·Î »ç¿ëÇØ¼­ String °ªÀ» ÀúÀåÇÏ´Â HashMap °´Ã¼ »ı¼º
+		//Key ê°ì²´ë¥¼ ì‹ë³„í‚¤ë¡œ ì‚¬ìš©í•´ì„œ String ê°’ì„ ì €ì¥í•˜ëŠ” HashMap ê°ì²´ ìƒì„±
 		HashMap<Key, String> hashMap = new HashMap<Key, String>();
 		
-		//½Äº°Å° "new Key(1)" ·Î "È«±æµ¿"À» ÀúÀåÇÔ
-		hashMap.put(new Key(1), "È«±æµ¿");
+		//ì‹ë³„í‚¤ "new Key(1)" ë¡œ "í™ê¸¸ë™"ì„ ì €ì¥í•¨
+		hashMap.put(new Key(1), "í™ê¸¸ë™");
 		
-		//½Äº°Å° "new Key(1)"·Î "È«±æµ¿"À» ÀĞ¾î¿È
+		//ì‹ë³„í‚¤ "new Key(1)"ë¡œ "í™ê¸¸ë™"ì„ ì½ì–´ì˜´
 		String value = hashMap.get(new Key(1));
 		System.out.println(value);
 

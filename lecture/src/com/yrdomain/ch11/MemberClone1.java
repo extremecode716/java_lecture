@@ -17,13 +17,13 @@ public class MemberClone1 implements Cloneable {
 
 	@Override
 	protected Object clone() throws CloneNotSupportedException {
-		// ¸ÕÀú ¾èÀº º¹»ç¸¦ ÇØ¼­ name, age¸¦ º¹Á¦ÇÑ´Ù.
+		// ë¨¼ì € ì–•ì€ ë³µì‚¬ë¥¼ í•´ì„œ name, ageë¥¼ ë³µì œí•œë‹¤.
 		MemberClone1 cloned = (MemberClone1) super.clone();
-		// scores¸¦ ±íÀº º¹Á¦ÇÑ´Ù.
+		// scoresë¥¼ ê¹Šì€ ë³µì œí•œë‹¤.
 		cloned.scores = Arrays.copyOf(this.scores, this.scores.length);
-		// car¸¦ ±íÀº º¹Á¦ÇÑ´Ù.
+		// carë¥¼ ê¹Šì€ ë³µì œí•œë‹¤.
 		cloned.car = new Car(this.car.model);
-		// ±íÀº º¹Á¦µÈ Member °´Ã¼¸¦ ¸®ÅÏ
+		// ê¹Šì€ ë³µì œëœ Member ê°ì²´ë¥¼ ë¦¬í„´
 		return cloned;
 	}
 
@@ -38,15 +38,15 @@ public class MemberClone1 implements Cloneable {
 	}
 
 	public static void main(String[] args) {
-		// ¿øº» °´Ã¼ »ı¼º
-		MemberClone1 original = new MemberClone1("È«±æµ¿", 25, new int[] { 90, 90 }, new Car("¼Ò³ªÅ¸"));
+		// ì›ë³¸ ê°ì²´ ìƒì„±
+		MemberClone1 original = new MemberClone1("í™ê¸¸ë™", 25, new int[] { 90, 90 }, new Car("ì†Œë‚˜íƒ€"));
 
-		// º¹Á¦ °´Ã¼¸¦ ¾òÀº ÈÄ¿¡ ÂüÁ¶ °´Ã¼ÀÇ °ªÀ» º¯°æ
+		// ë³µì œ ê°ì²´ë¥¼ ì–»ì€ í›„ì— ì°¸ì¡° ê°ì²´ì˜ ê°’ì„ ë³€ê²½
 		MemberClone1 cloned = original.getMember();
 		cloned.scores[0] = 100;
-		cloned.car.model = "±×·£Àú";
+		cloned.car.model = "ê·¸ëœì €";
 
-		System.out.println("[º¹Á¦ °´Ã¼ÀÇ ÇÊµå°ª]");
+		System.out.println("[ë³µì œ ê°ì²´ì˜ í•„ë“œê°’]");
 		System.out.println("name: " + cloned.name);
 		System.out.println("age: " + cloned.age);
 		System.out.print("scores: {");
@@ -59,7 +59,7 @@ public class MemberClone1 implements Cloneable {
 
 		System.out.println();
 
-		System.out.println("[¿øº» °´Ã¼ÀÇ ÇÊµå°ª]");
+		System.out.println("[ì›ë³¸ ê°ì²´ì˜ í•„ë“œê°’]");
 		System.out.println("name: " + original.name);
 		System.out.println("age: " + original.age);
 		System.out.print("scores: {");

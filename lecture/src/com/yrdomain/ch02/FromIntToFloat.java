@@ -7,9 +7,9 @@ public class FromIntToFloat {
 		int num1 = 123456780;
 		int num2 = 123456780;
 		
-		// float : ºÎÈ£(1bit) + Áö¼ö(8bit) + °¡¼ö(23bit)
+		// float : ë¶€í˜¸(1bit) + ì§€ìˆ˜(8bit) + ê°€ìˆ˜(23bit)
 		float num3 = num2;
-		System.out.println(num3); //1.23456784E8 // floatÀº ´ë·« 6~7ÀÚ¸®±îÁö Á¤¹Ğµµ¸¦ °¡Áü.
+		System.out.println(num3); //1.23456784E8 // floatì€ ëŒ€ëµ 6~7ìë¦¬ê¹Œì§€ ì •ë°€ë„ë¥¼ ê°€ì§.
 		num2 = (int)num3;
 
 		int result = num1 - num2;

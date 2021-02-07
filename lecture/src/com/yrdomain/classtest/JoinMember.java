@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-//ÀÛ¼ºÀÚ: ExtremeCode //control
-//ÆÄÀÏ:JoinMember.java
+//ì‘ì„±ì: ExtremeCode //control
+//íŒŒì¼:JoinMember.java
 public class JoinMember {
 	private static JoinMember gJoinMember = new JoinMember();
 
-	// DB·Î °¡Á¤.
+	// DBë¡œ ê°€ì •.
 	static List<Member> listMemberDB = new ArrayList<Member>();
 
 	private Member m_memberData = null;
@@ -26,7 +26,7 @@ public class JoinMember {
 		return m_memberData;
 	}
 
-	// È¸¿ø°¡ÀÔ Á¦Ãâ
+	// íšŒì›ê°€ì… ì œì¶œ
 	public boolean submit() {
 		if (m_memberData == null)
 			return false;
@@ -44,11 +44,11 @@ public class JoinMember {
 	///////////////////////////////////////////////////
 	// Last Name
 	EnumJoinMember checkLastName(final String _strLastName) {
-		// Á¤±Ô½Ä °Ë»ç
+		// ì •ê·œì‹ ê²€ì‚¬
 		if (!isRegularLastName(_strLastName))
 			return EnumJoinMember.REGULAR_LASTNAME_FAILED;
 
-		// DB Áßº¹ È®ÀÎ
+		// DB ì¤‘ë³µ í™•ì¸
 //		if (isFindLastNameFromDB(_strLastName)) {
 //			return EnumJoinMember.FIND_LASTNAME_SUCCED;
 //		}
@@ -57,7 +57,7 @@ public class JoinMember {
 	}
 
 	boolean isRegularLastName(final String _strLastName) {
-		if (Pattern.matches("^[°¡-ÆR]{1,10}|[a-zA-Z]{1,15}$", _strLastName))
+		if (Pattern.matches("^[ê°€-í£]{1,10}|[a-zA-Z]{1,15}$", _strLastName))
 			return true;
 
 		return false;
@@ -74,11 +74,11 @@ public class JoinMember {
 	//////////////////////////////////////////////////
 	// First Name
 	EnumJoinMember checkFirstName(final String _strFirstName) {
-		// Á¤±Ô½Ä °Ë»ç
+		// ì •ê·œì‹ ê²€ì‚¬
 		if (!isRegularFirstName(_strFirstName))
 			return EnumJoinMember.REGULAR_FIRSTNAME_FAILED;
 
-		// DB Áßº¹ È®ÀÎ
+		// DB ì¤‘ë³µ í™•ì¸
 //		if (isFindFirstNameFromDB(_strFirstName)) {
 //			return EnumJoinMember.FIND_FIRSTNAME_SUCCED;
 //		}
@@ -87,7 +87,7 @@ public class JoinMember {
 	}
 
 	boolean isRegularFirstName(final String _strFirstName) {
-		if (Pattern.matches("^[°¡-ÆR]{1,10}|[a-zA-Z]{1,25}$", _strFirstName))
+		if (Pattern.matches("^[ê°€-í£]{1,10}|[a-zA-Z]{1,25}$", _strFirstName))
 			return true;
 
 		return false;
@@ -104,11 +104,11 @@ public class JoinMember {
 	//////////////////////////////////////
 	// Email ID
 	EnumJoinMember checkEmailID(final String _strEmailID) {
-		// Á¤±Ô½Ä °Ë»ç
+		// ì •ê·œì‹ ê²€ì‚¬
 		if (!isRegularEmailID(_strEmailID))
 			return EnumJoinMember.REGULAR_EMAILID_FAILED;
 
-		// DB Áßº¹ È®ÀÎ
+		// DB ì¤‘ë³µ í™•ì¸
 		if (isFindEmailIDFromDB(_strEmailID)) {
 			return EnumJoinMember.FIND_EMAILID_SUCCED;
 		}
@@ -135,7 +135,7 @@ public class JoinMember {
 	//////////////////////////////////////
 	// Pw
 	EnumJoinMember checkPw(final String _strPw) {
-		// Á¤±Ô½Ä °Ë»ç
+		// ì •ê·œì‹ ê²€ì‚¬
 		if (!isRegularPw(_strPw))
 			return EnumJoinMember.REGULAR_PW_FAILED;
 

@@ -13,15 +13,15 @@ public class InputDataCheckNaNExample1And2 {
 		System.out.println(currentBalance);
 		
 		//2
-		// ¹®ÀÚ¿­ Á¤¼ö,½Ç¼ö Å¸ÀÔ º¯È¯½Ã NaNÃ¼Å© ÇÒ °Í.
+		// ë¬¸ìì—´ ì •ìˆ˜,ì‹¤ìˆ˜ íƒ€ì… ë³€í™˜ì‹œ NaNì²´í¬ í•  ê²ƒ.
 		String userInput2 = "NaN";
 		double val2 = Double.valueOf(userInput2);
 		
 		double currentBalance2 = 10000.0;
 		
-		// NaNÀ» °Ë»ç.
+		// NaNì„ ê²€ì‚¬.
 		if(Double.isNaN(val2)) {
-			System.out.println("NaNÀÌ ÀÔ·ÂµÇ¾î Ã³¸®ÇÒ ¼ö ¾øÀ½");
+			System.out.println("NaNì´ ì…ë ¥ë˜ì–´ ì²˜ë¦¬í•  ìˆ˜ ì—†ìŒ");
 			val2 = 0.0;
 		}
 		

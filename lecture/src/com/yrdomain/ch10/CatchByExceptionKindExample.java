@@ -13,13 +13,13 @@ public class CatchByExceptionKindExample {
 			int result = value1 + value2;
 			System.out.println(data1 + "+" + data2 + "=" + result);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("½ÇÇà ¸Å°³°ªÀÇ ¼ö°¡ ºÎÁ·ÇÕ´Ï´Ù.");
-			System.out.println("[½ÇÇà ¹æ¹ı]");
+			System.out.println("ì‹¤í–‰ ë§¤ê°œê°’ì˜ ìˆ˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
+			System.out.println("[ì‹¤í–‰ ë°©ë²•]");
 			System.out.println("java CatchByExceiptionKindExample num1 num2");
 		} catch (NumberFormatException e) {
-			System.out.println("¼ıÀÚ·Î º¯È¯ÇÒ ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ìˆ«ìë¡œ ë³€í™˜í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 		} finally {
-			System.out.println("´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
+			System.out.println("ë‹¤ì‹œ ì‹¤í–‰í•˜ì„¸ìš”.");
 		}
 	}
 

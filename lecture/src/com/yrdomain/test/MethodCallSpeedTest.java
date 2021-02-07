@@ -73,7 +73,7 @@ public class MethodCallSpeedTest {
 		}
 		lEndtTime = System.nanoTime();
 		dDiffTime = (lEndtTime - lStartTime) / Math.pow(10, 9);
-		System.out.println("static ¸Ş¼Òµå È£Ãâ ¼Óµµ( " + MAX_VALUE + " È¸ ) " + dDiffTime + " ÃÊ");
+		System.out.println("static ë©”ì†Œë“œ í˜¸ì¶œ ì†ë„( " + MAX_VALUE + " íšŒ ) " + dDiffTime + " ì´ˆ");
 		MethodCallSpeedTest.resetStaticField();
 		mcst.resetInstanceField();
 		MethodCallSpeedTest2.resetStaticField();
@@ -87,7 +87,7 @@ public class MethodCallSpeedTest {
 		}
 		lEndtTime = System.nanoTime();
 		dDiffTime = (lEndtTime - lStartTime) / Math.pow(10, 9);
-		System.out.println("instanceMethod_staicField È£Ãâ ¼Óµµ( " + MAX_VALUE + " È¸ ) " + dDiffTime + " ÃÊ");
+		System.out.println("instanceMethod_staicField í˜¸ì¶œ ì†ë„( " + MAX_VALUE + " íšŒ ) " + dDiffTime + " ì´ˆ");
 		MethodCallSpeedTest.resetStaticField();
 		mcst.resetInstanceField();
 		MethodCallSpeedTest2.resetStaticField();
@@ -100,7 +100,7 @@ public class MethodCallSpeedTest {
 		}
 		lEndtTime = System.nanoTime();
 		dDiffTime = (lEndtTime - lStartTime) / Math.pow(10, 9);
-		System.out.println("instanceMethod_instanceField È£Ãâ ¼Óµµ( " + MAX_VALUE + " È¸ ) " + dDiffTime + " ÃÊ");
+		System.out.println("instanceMethod_instanceField í˜¸ì¶œ ì†ë„( " + MAX_VALUE + " íšŒ ) " + dDiffTime + " ì´ˆ");
 		MethodCallSpeedTest.resetStaticField();
 		mcst.resetInstanceField();
 		MethodCallSpeedTest2.resetStaticField();
@@ -115,7 +115,7 @@ public class MethodCallSpeedTest {
 		}
 		lEndtTime = System.nanoTime();
 		dDiffTime = (lEndtTime - lStartTime) / Math.pow(10, 9);
-		System.out.println("·¹Áö½ºÅÍ instanceMethod_staicField È£Ãâ ¼Óµµ( " + MAX_VALUE + " È¸ ) " + dDiffTime + " ÃÊ");
+		System.out.println("ë ˆì§€ìŠ¤í„° instanceMethod_staicField í˜¸ì¶œ ì†ë„( " + MAX_VALUE + " íšŒ ) " + dDiffTime + " ì´ˆ");
 		MethodCallSpeedTest.resetStaticField();
 		mcst.resetInstanceField();
 		MethodCallSpeedTest2.resetStaticField();
@@ -130,7 +130,7 @@ public class MethodCallSpeedTest {
 		}
 		lEndtTime = System.nanoTime();
 		dDiffTime = (lEndtTime - lStartTime) / Math.pow(10, 9);
-		System.out.println("·¹Áö½ºÅÍ instanceMethod_instanceField È£Ãâ ¼Óµµ( " + MAX_VALUE + " È¸ ) " + dDiffTime + " ÃÊ");
+		System.out.println("ë ˆì§€ìŠ¤í„° instanceMethod_instanceField í˜¸ì¶œ ì†ë„( " + MAX_VALUE + " íšŒ ) " + dDiffTime + " ì´ˆ");
 		MethodCallSpeedTest.resetStaticField();
 		mcst.resetInstanceField();
 		MethodCallSpeedTest2.resetStaticField();

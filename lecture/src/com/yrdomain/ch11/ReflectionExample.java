@@ -8,11 +8,11 @@ public class ReflectionExample {
 		try {
 			Class<?> clazz = Class.forName("com.yrdomain.ch06.Car");
 
-			System.out.println("[Å¬·¡½º ÀÌ¸§]");
+			System.out.println("[í´ë˜ìŠ¤ ì´ë¦„]");
 			System.out.println(clazz.getName());
 			System.out.println();
 
-			System.out.println("[»ı¼ºÀÚ Á¤º¸]");
+			System.out.println("[ìƒì„±ì ì •ë³´]");
 			Constructor<?>[] constructors = clazz.getDeclaredConstructors();
 			for (Constructor<?> constructor : constructors) {
 				System.out.print(constructor.getName() + "(");
@@ -21,14 +21,14 @@ public class ReflectionExample {
 				System.out.println(")");
 			}
 
-			System.out.println("[ÇÊµå Á¤º¸]");
+			System.out.println("[í•„ë“œ ì •ë³´]");
 			Field[] fields = clazz.getDeclaredFields();
 			for (Field field : fields) {
 				System.out.println(field.getType().getSimpleName() + " " + field.getName());
 			}
 			System.out.println();
 			
-			System.out.println("[¸Ş¼Òµå Á¤º¸]");
+			System.out.println("[ë©”ì†Œë“œ ì •ë³´]");
 			Method[] methods = clazz.getDeclaredMethods();
 			for(Method method : methods) {
 				System.out.print(method.getName() + "(");
@@ -45,7 +45,7 @@ public class ReflectionExample {
 
 	}
 
-	private static void printParameters(Class[] parameters) {
+	private static void printParameters(@SuppressWarnings("rawtypes") Class[] parameters) {
 		for (int i = 0; i < parameters.length; ++i) {
 			System.out.print(parameters[i].getSimpleName());
 			if (i < (parameters.length - 1)) {

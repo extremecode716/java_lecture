@@ -4,17 +4,17 @@ public class SwitchStringExample {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String position = "°úÀå";
+		String position = "ê³¼ì¥";
 
 		switch (position) {
-		case "ºÎÀå":
-			System.out.println("700¸¸¿ø");
+		case "ë¶€ì¥":
+			System.out.println("700ë§Œì›");
 			break;
-		case "°úÀå":
-			System.out.println("500¸¸¿ø");
+		case "ê³¼ì¥":
+			System.out.println("500ë§Œì›");
 			break;
 		default:
-			System.out.println("300¸¸¿ø");
+			System.out.println("300ë§Œì›");
 		}
 	}
 

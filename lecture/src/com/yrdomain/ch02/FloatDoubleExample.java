@@ -2,12 +2,12 @@ package com.yrdomain.ch02;
 
 public class FloatDoubleExample {
 	public static void main(String[] args) {
-		//½Ç¼ö°ª ÀúÀå
+		//ì‹¤ìˆ˜ê°’ ì €ì¥
 		double var1 = 3.14;
-		//float var2 = 3.14; //ÄÄÆÄÀÏ ¿¡·¯(Type mismatch)
+		//float var2 = 3.14; //ì»´íŒŒì¼ ì—ëŸ¬(Type mismatch)
 		float var3 = 3.14F;
 		
-		//Á¤¹Ğµµ Å×½ºÆ®
+		//ì •ë°€ë„ í…ŒìŠ¤íŠ¸
 		double var4 = 0.1234567890123456789;
 		float var5 = 0.1234567890123456789F;
 		
@@ -17,7 +17,7 @@ public class FloatDoubleExample {
 		System.out.println("var5: " + var5);
 		
 		
-		//e »ç¿ëÇÏ±â
+		//e ì‚¬ìš©í•˜ê¸°
 		int var6 = 3000000;
 		double var7 = 3e6;
 		float var8 = 3e6F;

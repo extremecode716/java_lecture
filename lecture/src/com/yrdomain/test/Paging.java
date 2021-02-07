@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.io.IOException;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class Paging {
 	final static int MAX_SIZE = 100;
 	final static int MAX_VIEW_COUNT = 10;
@@ -28,7 +28,7 @@ public class Paging {
 			if (keyCode != 13 && keyCode != 10) {
 				System.out.print("<< < ");
 				for (int i = iPageViewStartIndex; i < MAX_SIZE && i < iPageViewEndIndex; ++i) {
-					// bold ¸í·É¾î ¾ÈµÇ¼­ °ıÈ£·Î Ç¥Çö.
+					// bold ëª…ë ¹ì–´ ì•ˆë˜ì„œ ê´„í˜¸ë¡œ í‘œí˜„.
 					if (i == iCurrentPageIndex) {
 						System.out.print("(" + arrPage[i] + ")");
 					} else {
@@ -42,22 +42,22 @@ public class Paging {
 				System.out.print(" > >>");
 				System.out.println();
 
-				System.out.println("( 1 ¿ŞÂÊ | 2 ¿À¸¥ÂÊ | 3 ¿ŞÂÊ < | 4 ¿À¸¥ÂÊ > )");
+				System.out.println("( 1 ì™¼ìª½ | 2 ì˜¤ë¥¸ìª½ | 3 ì™¼ìª½ < | 4 ì˜¤ë¥¸ìª½ > )");
 				System.out.print("input number : ");
 			}
-			// ÀÔ·Â ½ºÆ®¸²¿¡¼­ µ¥ÀÌÅÍÀÇ ´ÙÀ½ ¹ÙÀÌÆ®¸¦ ÀĞÀ½. (0~255) ´ÙÀ½ ¹ÙÀÌÆ®°¡ ¾øÀ» °æ¿ì, -1À» ¸®ÅÏ, ÀÔ·Â µ¥ÀÌÅÍ »ç¿ëÇÒ ¼ö ÀÖÀ» ¶§±îÁö
-			// ½ºÆ®¸² ³¡ÀÌ °¨Áö.
+			// ì…ë ¥ ìŠ¤íŠ¸ë¦¼ì—ì„œ ë°ì´í„°ì˜ ë‹¤ìŒ ë°”ì´íŠ¸ë¥¼ ì½ìŒ. (0~255) ë‹¤ìŒ ë°”ì´íŠ¸ê°€ ì—†ì„ ê²½ìš°, -1ì„ ë¦¬í„´, ì…ë ¥ ë°ì´í„° ì‚¬ìš©í•  ìˆ˜ ìˆì„ ë•Œê¹Œì§€
+			// ìŠ¤íŠ¸ë¦¼ ëì´ ê°ì§€.
 			keyCode = System.in.read();
 
 			switch (keyCode) {
-			case 49: // 1 ´©¸£¸é ¿ŞÂÊ
+			case 49: // 1 ëˆ„ë¥´ë©´ ì™¼ìª½
 				iCurrentPageIndex = (iCurrentPageIndex > 0) ? (--iCurrentPageIndex) : (iCurrentPageIndex = 0);
 				iPageViewStartIndex = iCurrentPageIndex / MAX_VIEW_COUNT * MAX_VIEW_COUNT;
 				iPageViewEndIndex = (iPageViewStartIndex + MAX_VIEW_COUNT < MAX_SIZE)
 						? (iPageViewEndIndex = iPageViewStartIndex + MAX_VIEW_COUNT)
 						: (iPageViewEndIndex = MAX_SIZE);
 				break;
-			case 50: // 2 ´©¸£¸é ¿À¸¥ÂÊ
+			case 50: // 2 ëˆ„ë¥´ë©´ ì˜¤ë¥¸ìª½
 				iCurrentPageIndex = (iCurrentPageIndex < MAX_SIZE - 1) ? (++iCurrentPageIndex)
 						: (iCurrentPageIndex = MAX_SIZE - 1);
 				iPageViewStartIndex = iCurrentPageIndex / MAX_VIEW_COUNT * MAX_VIEW_COUNT;
@@ -65,7 +65,7 @@ public class Paging {
 						? (iPageViewEndIndex = iPageViewStartIndex + MAX_VIEW_COUNT)
 						: (iPageViewEndIndex = MAX_SIZE);
 				break;
-			case 51: // 3 ´©¸£¸é 10 page ¿ŞÂÊ
+			case 51: // 3 ëˆ„ë¥´ë©´ 10 page ì™¼ìª½
 				iCurrentPageIndex = (iCurrentPageIndex > MAX_VIEW_COUNT)
 						? (iCurrentPageIndex = (iCurrentPageIndex - MAX_VIEW_COUNT) / MAX_VIEW_COUNT * MAX_VIEW_COUNT)
 						: (iCurrentPageIndex = 0);
@@ -74,7 +74,7 @@ public class Paging {
 						? (iPageViewEndIndex = iPageViewStartIndex + MAX_VIEW_COUNT)
 						: (iPageViewEndIndex = MAX_SIZE);
 				break;
-			case 52: // 4´©¸£¸é 10 page ¿À¸¥ÂÊ
+			case 52: // 4ëˆ„ë¥´ë©´ 10 page ì˜¤ë¥¸ìª½
 				iCurrentPageIndex = (iCurrentPageIndex < MAX_SIZE - MAX_VIEW_COUNT)
 						? (iCurrentPageIndex = (iCurrentPageIndex + MAX_VIEW_COUNT) / MAX_VIEW_COUNT * MAX_VIEW_COUNT)
 						: (iCurrentPageIndex = MAX_SIZE - 1);

@@ -3,20 +3,20 @@ package com.yrdomain.ch06;
 public class CarExample {
 
 	public static void main(String[] args) {
-		// °´Ã¼ »ı¼º
-		// Car myCar = new Car(); // ±âº» »ı¼ºÀÚ°¡ ¾ø¾îÁü. ¸í½ÃÀû »ı¼ºÀÚ¸¦ ¼±¾ğÇß±â ¶§¹®¿¡
-		Car myCar = new Car("°ËÁ¤", 3000);
+		// ê°ì²´ ìƒì„±
+		// Car myCar = new Car(); // ê¸°ë³¸ ìƒì„±ìê°€ ì—†ì–´ì§. ëª…ì‹œì  ìƒì„±ìë¥¼ ì„ ì–¸í–ˆê¸° ë•Œë¬¸ì—
+		Car myCar = new Car("ê²€ì •", 3000);
 
-		// ÇÊµå°ª ÀĞ±â
-		System.out.println("Á¦ÀÛÈ¸»ç: " + myCar.company);
-		System.out.println("¸ğµ¨¸í: " + myCar.model);
-		System.out.println("»ö±ò: " + myCar.color);
-		System.out.println("ÃÖ°í¼Óµµ: " + myCar.maxSpeed);
-		System.out.println("ÇöÀç¼Óµµ: " + myCar.speed);
+		// í•„ë“œê°’ ì½ê¸°
+		System.out.println("ì œì‘íšŒì‚¬: " + myCar.company);
+		System.out.println("ëª¨ë¸ëª…: " + myCar.model);
+		System.out.println("ìƒ‰ê¹”: " + myCar.color);
+		System.out.println("ìµœê³ ì†ë„: " + myCar.maxSpeed);
+		System.out.println("í˜„ì¬ì†ë„: " + myCar.speed);
 
-		// ÇÊµå°ª º¯°æ
+		// í•„ë“œê°’ ë³€ê²½
 		myCar.speed = 60;
-		System.out.println("¼öÁ¤µÈ ¼Óµµ: " + myCar.speed);
+		System.out.println("ìˆ˜ì •ëœ ì†ë„: " + myCar.speed);
 		System.out.println();
 
 		/////////////////////////////////////////////////
@@ -24,18 +24,18 @@ public class CarExample {
 		System.out.println("car1.company : " + car1.company);
 		System.out.println();
 
-		Car car2 = new Car("ÀÚ°¡¿ë");
+		Car car2 = new Car("ìê°€ìš©");
 		System.out.println("car2.company : " + car2.company);
 		System.out.println("car2.model : " + car2.model);
 		System.out.println();
 
-		Car car3 = new Car("ÀÚ°¡¿ë", "»¡°­");
+		Car car3 = new Car("ìê°€ìš©", "ë¹¨ê°•");
 		System.out.println("car3.company : " + car3.company);
 		System.out.println("car3.model : " + car3.model);
 		System.out.println("car3.color : " + car3.color);
 		System.out.println();
 
-		Car car4 = new Car("ÅÃ½Ã", "°ËÁ¤", 200);
+		Car car4 = new Car("íƒì‹œ", "ê²€ì •", 200);
 		System.out.println("car4.company : " + car4.company);
 		System.out.println("car4.model : " + car4.model);
 		System.out.println("car4.color : " + car4.color);

@@ -3,11 +3,11 @@ package com.yrdomain.test;
 import java.util.Calendar;
 import java.util.Scanner;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class CalendarExample {
-	private static Calendar cal = Calendar.getInstance(); //½Ì±ÛÅæ, ÇöÀç½Ã°£À» °¡Á®¿È.
+	private static Calendar cal = Calendar.getInstance(); //ì‹±ê¸€í†¤, í˜„ì¬ì‹œê°„ì„ ê°€ì ¸ì˜´.
 	private static final int SEVEN_DAYS = 7;
-	private static String[] arrStrDayOfWeek = { "ÀÏ", "¿ù", "È­", "¼ö", "¸ñ", "±İ", "Åä" };
+	private static String[] arrStrDayOfWeek = { "ì¼", "ì›”", "í™”", "ìˆ˜", "ëª©", "ê¸ˆ", "í† " };
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -99,7 +99,7 @@ public class CalendarExample {
 		setCalendarData_InputYearAndMon(_iYear, _iMon, _calData);
 
 		System.out.println(
-				"---------------------" + _calData.m_iYear + "³â " + _calData.m_iMon + "¿ù" + "--------------------");
+				"---------------------" + _calData.m_iYear + "ë…„ " + _calData.m_iMon + "ì›”" + "--------------------");
 
 		for (int i = 0; i < arrStrDayOfWeek.length; ++i) {
 			System.out.print(arrStrDayOfWeek[i] + "\t");

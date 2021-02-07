@@ -3,13 +3,13 @@ package com.yrdomain.test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class FindId {
 	public static void main(String[] args) {
-		// ¼­¹ö °ËÁõ
-		// Email ÁÖ¼Ò·Î ID Ã£±â
+		// ì„œë²„ ê²€ì¦
+		// Email ì£¼ì†Œë¡œ ID ì°¾ê¸°
 		//							ID				Email				name
-		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB ÀúÀå Á¤º¸ (Áßº¹x) //ÀÚ¹Ù ³»ºÎ µ¥ÀÌÅÍµµ final ÇÒ °Í.
+		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB ì €ì¥ ì •ë³´ (ì¤‘ë³µx) //ìë°” ë‚´ë¶€ ë°ì´í„°ë„ final í•  ê²ƒ.
 		final int MAX_SIZE = 50;
 
 		String strInputEmail = null;
@@ -25,38 +25,38 @@ public class FindId {
 			strInputEmail = null;
 			strInputName = null;
 
-			// Å¬¶ó °¡Á¤
-			System.out.println("¾ÆÀÌµğ¸¦ Ã£À¸½Ã·Á¸é email °ú name À» ÀÔ·ÂÇÏ½Ã¿À.");
+			// í´ë¼ ê°€ì •
+			System.out.println("ì•„ì´ë””ë¥¼ ì°¾ìœ¼ì‹œë ¤ë©´ email ê³¼ name ì„ ì…ë ¥í•˜ì‹œì˜¤.");
 			System.out.print("email: ");
-			strInputEmail = sc.nextLine();	//  +Á¤±Ô½Ä °Ë»ç ÇÒ °Í
+			strInputEmail = sc.nextLine();	//  +ì •ê·œì‹ ê²€ì‚¬ í•  ê²ƒ
 			if (strInputEmail.length() > MAX_SIZE) {
 				System.out.println("Email Length Over");	
 				continue;
 			}
 			System.out.print("name: ");
-			strInputName = sc.nextLine();	//  +Á¤±Ô½Ä °Ë»ç ÇÒ °Í
+			strInputName = sc.nextLine();	//  +ì •ê·œì‹ ê²€ì‚¬ í•  ê²ƒ
 			if (strInputName.length() > MAX_SIZE) {
 				System.out.println("Name Length Over");	
 				continue;
 			}
 			
-			// ¼­¹ö °¡Á¤ //////////////////////////////////////
-			// DB Email Find Çß´Ù°í °¡Á¤
+			// ì„œë²„ ê°€ì • //////////////////////////////////////
+			// DB Email Find í–ˆë‹¤ê³  ê°€ì •
 			if (strInputEmail.equals(arrStrUser[1]) && strInputName.equals(arrStrUser[2])) {
 				bFindId = true;
 				break;
 			}
 			////////////////////////////////////////////////
 			
-			System.out.println("email¿¡ ¸Â´Â ¾ÆÀÌµğ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("emailì— ë§ëŠ” ì•„ì´ë””ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			System.out.println("------------------------------");
 			
 		} while (true);
 
-		// Å¬¶ó °¡Á¤. find true
+		// í´ë¼ ê°€ì •. find true
 		System.out.println("------------------------------");
-		System.out.println("¾ÆÀÌµğ Ã£±â ¼º°ø");
-		//¾Æ½ºÅ×¸¯ id 
+		System.out.println("ì•„ì´ë”” ì°¾ê¸° ì„±ê³µ");
+		//ì•„ìŠ¤í…Œë¦­ id 
 		char[] arrAsteriskId = new char[arrStrUser[0].length()+1];
 		arrStrUser[0].getChars(0, arrStrUser[0].length()/2, arrAsteriskId, 0);
 		Arrays.fill(arrAsteriskId, arrStrUser[0].length()/2, arrStrUser[0].length(), '*');

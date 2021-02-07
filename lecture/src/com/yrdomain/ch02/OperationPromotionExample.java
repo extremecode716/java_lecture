@@ -8,7 +8,7 @@ public class OperationPromotionExample {
 		byte byteValue1 = 10;
 		byte byteValue2 = 20;
 		
-		// java¿¡¼­´Â default Å©±â°¡ 4byte¶ó¼­ ÀÌ·± ¿À·ù°¡ »ı±è. ¹­À»°Í. Q) sizoef È®ÀÎ ÇÏ´Â¹ı.
+		// javaì—ì„œëŠ” default í¬ê¸°ê°€ 4byteë¼ì„œ ì´ëŸ° ì˜¤ë¥˜ê°€ ìƒê¹€. ë¬¶ì„ê²ƒ. Q) sizoef í™•ì¸ í•˜ëŠ”ë²•.
 		byte byteValue3 = (byte)(byteValue1 + byteValue2);
 		System.out.println(byteValue3);
 		int intValue1 = byteValue1 + byteValue2;
@@ -20,8 +20,8 @@ public class OperationPromotionExample {
 		char charValue3 = (char)(charValue1 + charValue2);
 		System.out.println(charValue3);
 		int intValue2 = charValue1 + charValue2;
-		System.out.println("À¯´ÏÄÚµå=" + intValue2);
-		System.out.println("Ãâ·Â¹®ÀÚ=" + (char)intValue2);
+		System.out.println("ìœ ë‹ˆì½”ë“œ=" + intValue2);
+		System.out.println("ì¶œë ¥ë¬¸ì=" + (char)intValue2);
 		
 		int intValue3 = 10;
 		int intValue4 = intValue3 / 4;

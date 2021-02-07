@@ -1,28 +1,28 @@
 package com.yrdomain.test;
 
-//ÄÚµå ÁÖ¼® ¼³¸í ¹× ¿À·ù¼öÁ¤ÀÚ : ExtremeCode
+//ì½”ë“œ ì£¼ì„ ì„¤ëª… ë° ì˜¤ë¥˜ìˆ˜ì •ì : ExtremeCode
 public class MultiplicationRandom_HelpCode1 {
 
 	public static void main(String[] args) {
-		MultiplicationRandom_HelpCode1 test = new MultiplicationRandom_HelpCode1(); // MultiplicationRandom_HelpCode1°´Ã¼¸¦ »ı¼ºÇØ¼­ test º¯¼ö¿¡ ÂüÁ¶°ªÀ¸·Î ³Ö´Â´Ù.
-		int num1 = (int) (Math.random() * 8 + 2); // num1 Àº 2 <= num1 < 10 »çÀÌÀÇ ·£´ıÇÑ ¼ö¸¦ °¡Áø´Ù.
-		int num2 = (int) (Math.random() * 8 + 2); // num2 Àº 2 <= num2 < 10 »çÀÌÀÇ ·£´ıÇÑ ¼ö¸¦ °¡Áø´Ù.
+		MultiplicationRandom_HelpCode1 test = new MultiplicationRandom_HelpCode1(); // MultiplicationRandom_HelpCode1ê°ì²´ë¥¼ ìƒì„±í•´ì„œ test ë³€ìˆ˜ì— ì°¸ì¡°ê°’ìœ¼ë¡œ ë„£ëŠ”ë‹¤.
+		int num1 = (int) (Math.random() * 8 + 2); // num1 ì€ 2 <= num1 < 10 ì‚¬ì´ì˜ ëœë¤í•œ ìˆ˜ë¥¼ ê°€ì§„ë‹¤.
+		int num2 = (int) (Math.random() * 8 + 2); // num2 ì€ 2 <= num2 < 10 ì‚¬ì´ì˜ ëœë¤í•œ ìˆ˜ë¥¼ ê°€ì§„ë‹¤.
 
-		while (num1 == num2) { // ¹İº¹¹®À» Á¶°Ç½Ä num1 == num2°¡ °°À¸¸é ³»ºÎ·ÎÁ÷ÀÌ ½ÇÇàµÈ´Ù. // ¼­·Î °°Àº ´Ü¼ö¸¦ Ãâ·ÂÇÏ´Â °ÍÀ» ¸·±â À§ÇØ ÇÏ½Å µí.
-			num1 = (int) (Math.random() * 8 + 2); // num1 Àº 2 <= num1 < 10 »çÀÌÀÇ ·£´ıÇÑ ¼ö¸¦ °¡Áø´Ù.
-													// num1 ÀÌ º¯°æµÊÀ¸·Î whileÀ» ºüÁ®³ª¿Ã¼öÀÖ´Ù.
-		} // while¹® ³¡
-		test.sys(num1, num2); // testÀÇ sys¸Ş¼Òµå¸¦ È£ÃâÇÑ´Ù.
-	}// main¸Ş¼­µå ³¡
+		while (num1 == num2) { // ë°˜ë³µë¬¸ì„ ì¡°ê±´ì‹ num1 == num2ê°€ ê°™ìœ¼ë©´ ë‚´ë¶€ë¡œì§ì´ ì‹¤í–‰ëœë‹¤. // ì„œë¡œ ê°™ì€ ë‹¨ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” ê²ƒì„ ë§‰ê¸° ìœ„í•´ í•˜ì‹  ë“¯.
+			num1 = (int) (Math.random() * 8 + 2); // num1 ì€ 2 <= num1 < 10 ì‚¬ì´ì˜ ëœë¤í•œ ìˆ˜ë¥¼ ê°€ì§„ë‹¤.
+													// num1 ì´ ë³€ê²½ë¨ìœ¼ë¡œ whileì„ ë¹ ì ¸ë‚˜ì˜¬ìˆ˜ìˆë‹¤.
+		} // whileë¬¸ ë
+		test.sys(num1, num2); // testì˜ sysë©”ì†Œë“œë¥¼ í˜¸ì¶œí•œë‹¤.
+	}// mainë©”ì„œë“œ ë
 
 	public void sys(int num1, int num2) {
-		System.out.println("---- " + num1 + "´Ü ----"); // Ãâ·Â¹® num1 ´Ü
+		System.out.println("---- " + num1 + "ë‹¨ ----"); // ì¶œë ¥ë¬¸ num1 ë‹¨
 
-		for (int i = 1; i <= 9; i++) { // i´Â 1ºÎÅÍ ½ÃÀÛÇØ¼­ Á¶°Ç½Ä i<=9 °Ë»çÇÏ°í trueÀÌ¸é ³»ºÎ ·ÎÁ÷ ½ÇÇà false ÀÌ¸é ¹İº¹¹® Å»Ãâ
-			System.out.println(num1 + " x " + i + " = " + num1 * i); // Ãâ·Â num1 x i = num1 * i;
-		} // iÀÇ °ªÀ» 1Áõ°¡ ½ÃÅ°°í, i <= 9; Á¶°Ç½ÄÀÌ trueÀÌ¸é ´Ù½Ã ³»ºÎ·ÎÁ÷ ½ÇÇà false ÀÌ¸é ¹İº¹¹® Å»Ãâ
+		for (int i = 1; i <= 9; i++) { // iëŠ” 1ë¶€í„° ì‹œì‘í•´ì„œ ì¡°ê±´ì‹ i<=9 ê²€ì‚¬í•˜ê³  trueì´ë©´ ë‚´ë¶€ ë¡œì§ ì‹¤í–‰ false ì´ë©´ ë°˜ë³µë¬¸ íƒˆì¶œ
+			System.out.println(num1 + " x " + i + " = " + num1 * i); // ì¶œë ¥ num1 x i = num1 * i;
+		} // iì˜ ê°’ì„ 1ì¦ê°€ ì‹œí‚¤ê³ , i <= 9; ì¡°ê±´ì‹ì´ trueì´ë©´ ë‹¤ì‹œ ë‚´ë¶€ë¡œì§ ì‹¤í–‰ false ì´ë©´ ë°˜ë³µë¬¸ íƒˆì¶œ
 
-		System.out.println("---- " + num2 + "´Ü ----"); // À§¶û °°Àº Á¶°ÇÀ¸·Î num2 ´Ü
+		System.out.println("---- " + num2 + "ë‹¨ ----"); // ìœ„ë‘ ê°™ì€ ì¡°ê±´ìœ¼ë¡œ num2 ë‹¨
 		for (int i = 1; i <= 9; i++) {
 			System.out.println(num2 + " x " + i + " = " + num2 * i);
 		}

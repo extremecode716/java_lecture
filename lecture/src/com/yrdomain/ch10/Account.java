@@ -31,18 +31,18 @@ public class Account {
 
 	public void withdraw(int money) throws BalanceInsufficientException {
 		if (balance < money) {
-			throw new BalanceInsufficientException("ÀÜ°íºÎÁ·:" + (money - balance) + " ¸ðÀÚ¶÷");
+			throw new BalanceInsufficientException("ìž”ê³ ë¶€ì¡±:" + (money - balance) + " ëª¨ìžëžŒ");
 		}
 		balance -= money;
 	}
 
 	public static void main(String[] args) {
 		Account account = new Account();
-		// ¿¹±ÝÇÏ±â
+		// ì˜ˆê¸ˆí•˜ê¸°
 		account.deposit(10000);
-		System.out.println("¿¹±Ý¾×: " + account.getBalanced());
+		System.out.println("ì˜ˆê¸ˆì•¡: " + account.getBalanced());
 
-		// Ãâ±ÝÇÏ±â
+		// ì¶œê¸ˆí•˜ê¸°
 		try {
 			account.withdraw(30000);
 		} catch (BalanceInsufficientException e) {

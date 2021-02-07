@@ -7,13 +7,13 @@ public interface Action {
 class SendAction implements Action{
 	@Override
 	public void execute() {
-		System.out.println("µ¥ÀÌÅÍ¸¦ º¸³À´Ï´Ù.");
+		System.out.println("ë°ì´í„°ë¥¼ ë³´ëƒ…ë‹ˆë‹¤.");
 	}
 }
 
 class ReceiveAction implements Action{
 	@Override
 	public void execute() {
-		System.out.println("µ¥ÀÌÅÍ¸¦ ¹Ş½À´Ï´Ù.");
+		System.out.println("ë°ì´í„°ë¥¼ ë°›ìŠµë‹ˆë‹¤.");
 	}
 }

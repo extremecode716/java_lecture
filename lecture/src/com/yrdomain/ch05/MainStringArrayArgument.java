@@ -5,7 +5,7 @@ public class MainStringArrayArgument {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		if(args.length != 2) {
-			System.out.println("ÇÁ·Î±×·¥ÀÇ »ç¿ë¹ı");
+			System.out.println("í”„ë¡œê·¸ë¨ì˜ ì‚¬ìš©ë²•");
 			System.out.println("java MainStringArrayArgument num1 num2");
 			System.exit(0);
 		}
@@ -13,7 +13,7 @@ public class MainStringArrayArgument {
 		String strNum1 = args[0];
 		String strNum2 = args[1];
 		
-		// Á¤¼ö·Î º¯È¯ÇÒ ¼ö ¾ø´Â ¹®ÀÚ¿­ÀÏ °æ¿ì NumberFormatException
+		// ì •ìˆ˜ë¡œ ë³€í™˜í•  ìˆ˜ ì—†ëŠ” ë¬¸ìì—´ì¼ ê²½ìš° NumberFormatException
 		int num1 = Integer.parseInt(strNum1);
 		int num2 = Integer.parseInt(strNum2);
 		

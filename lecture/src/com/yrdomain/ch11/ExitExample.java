@@ -3,12 +3,12 @@ package com.yrdomain.ch11;
 public class ExitExample {
 
 	public static void main(String[] args) {
-		// º¸¾È °ü¸®ÀÚ ¼³Á¤
+		// ë³´ì•ˆ ê´€ë¦¬ì ì„¤ì •
 		System.setSecurityManager(new SecurityManager() {
 			@Override
 			public void checkExit(int status) {
 				if (status != 5) {
-					throw new SecurityException(); //RuntimeExceptionÀ» ´øÁ®¼­ Á¾·á¸¦ ¸·´Â´Ù.
+					throw new SecurityException(); //RuntimeExceptionì„ ë˜ì ¸ì„œ ì¢…ë£Œë¥¼ ë§‰ëŠ”ë‹¤.
 				}
 			}
 		});
@@ -17,7 +17,7 @@ public class ExitExample {
 		for(int i = 0; i < 10; ++i) {
 			System.out.println(i);
 			try {
-				//JVM Á¾·á ¿äÃ»
+				//JVM ì¢…ë£Œ ìš”ì²­
 				System.exit(i);
 			}catch(SecurityException e) {}
 		}

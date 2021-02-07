@@ -1,8 +1,8 @@
 package com.yrdomain.classtest;
 
 public class MideaPlayer {
-	// ½½¶óÀÌµå has-a Ãß°¡ÇÒ °Í.
-	// button has-a Ãß°¡ÇÒ °Í.
+	// ìŠ¬ë¼ì´ë“œ has-a ì¶”ê°€í•  ê²ƒ.
+	// button has-a ì¶”ê°€í•  ê²ƒ.
 	private boolean m_bPlay;
 	private boolean m_bPause;
 	private boolean m_bLoop;
@@ -18,20 +18,20 @@ public class MideaPlayer {
 	// width , height
 
 	/////////////////////////////////////
-	// ¼ö½Å Á¤º¸µé
-	// midea data Á¤º¸µé
+	// ìˆ˜ì‹  ì •ë³´ë“¤
+	// midea data ì •ë³´ë“¤
 	// private double m_dLoadStartTime; ~endTime
     // private boolean m_bSubtitle;
-	// ¼ö½Å speed , ÀÎÄÚµù data, µğÄÚµù data
+	// ìˆ˜ì‹  speed , ì¸ì½”ë”© data, ë””ì½”ë”© data
 
-	// Å¬·¡½ºÈ­ ÇØ¼­ ÀúÀåÇÏ°íÀÖÀ» ÇÊµåµé
-	// ¿µ»ó È­Áú 
-	// »ç¿ëÀÚ È¯°æ size;
-	// ¿µ»ó »çÀÌÁî width, height ;
+	// í´ë˜ìŠ¤í™” í•´ì„œ ì €ì¥í•˜ê³ ìˆì„ í•„ë“œë“¤
+	// ì˜ìƒ í™”ì§ˆ 
+	// ì‚¬ìš©ì í™˜ê²½ size;
+	// ì˜ìƒ ì‚¬ì´ì¦ˆ width, height ;
 	//
 	///////////////////////////////////
 	
-	// ¿µ»ó Àç»ı
+	// ì˜ìƒ ì¬ìƒ
 	public void play() {
 		m_bPlay = true;
 		m_bPause = (m_bPlay == true) ? (false) : (true);
@@ -40,7 +40,7 @@ public class MideaPlayer {
 		*/
 	}
 
-	// ¿µ»ó Á¤Áö
+	// ì˜ìƒ ì •ì§€
 	public void pause() {
 		m_bPlay = false;
 		m_bPause = (m_bPlay == true) ? (false) : (true);
@@ -49,7 +49,7 @@ public class MideaPlayer {
 		 */
 	}
 	
-	// ¿µ»ó ´ÙÀ½
+	// ì˜ìƒ ë‹¤ìŒ
 	public void next() {
 		
 	}
@@ -57,9 +57,9 @@ public class MideaPlayer {
 	public void setVolume(double _dVolume)
 	{
 		m_dVolume = _dVolume;
-		// ½ÇÁúÀûÀ¸·Î º¼·ı Á¶Àı
+		// ì‹¤ì§ˆì ìœ¼ë¡œ ë³¼ë¥¨ ì¡°ì ˆ
 	}
-	// ÀÌº¥Æ® + ¹öÆ°
+	// ì´ë²¤íŠ¸ + ë²„íŠ¼
 	
 	// run
 	public int run() {
@@ -67,13 +67,13 @@ public class MideaPlayer {
 		return 0;
 	}
 	
-	// È­¸é °»½Å
+	// í™”ë©´ ê°±ì‹ 
 	public int rendering() {
 
 		return 0;
 	}
 
-	// ÀüÃ¼ È­¸é ½ºÀ§Ä¡
+	// ì „ì²´ í™”ë©´ ìŠ¤ìœ„ì¹˜
 	public boolean switchToFullscrean() {
 
 		m_bFullScreen = (m_bFullScreen == false) ? (true) : (false);

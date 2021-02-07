@@ -2,13 +2,13 @@ package com.yrdomain.test;
 
 import java.util.Scanner;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class Login {
 	public static void main(String[] args) {
-		// ¼­¹ö °ËÁõ
+		// ì„œë²„ ê²€ì¦
 		// 								ID			  PW
-		final String[] arrUserData = { "ExtremeCode", "123123" }; // DB ÀúÀå Á¤º¸·Î °¡Á¤(IDÁßº¹x), PW´Â ÇØ½Ã°ª
-		// ÀÚ¹Ù¿¡¼­ ³»ºÎ µ¥ÀÌÅÍ »ó¼öÈ­ ÀÏ¹İÀûÀÎ ¹æ¹ıÀÌ ¾ÈµÊ. final String[] final arrUserData = 
+		final String[] arrUserData = { "ExtremeCode", "123123" }; // DB ì €ì¥ ì •ë³´ë¡œ ê°€ì •(IDì¤‘ë³µx), PWëŠ” í•´ì‹œê°’
+		// ìë°”ì—ì„œ ë‚´ë¶€ ë°ì´í„° ìƒìˆ˜í™” ì¼ë°˜ì ì¸ ë°©ë²•ì´ ì•ˆë¨. final String[] final arrUserData = 
 
 		final int MAX_SIZE = 25;
 		String strInputId = null;
@@ -23,24 +23,24 @@ public class Login {
 			strInputId = null;
 			strInputPw = null;
 			
-			// Å¬¶ó °¡Á¤
-			System.out.println("------·Î±×ÀÎ Ã¢------");
+			// í´ë¼ ê°€ì •
+			System.out.println("------ë¡œê·¸ì¸ ì°½------");
 			System.out.print("ID: ");
-			strInputId = sc.nextLine();	// +Á¤±Ô½Ä °Ë»ç
+			strInputId = sc.nextLine();	// +ì •ê·œì‹ ê²€ì‚¬
 			if (strInputId.length() > MAX_SIZE) {
 				System.out.println("ID Length Over");	
 				continue;
 			}
 			System.out.print("PW: ");
-			strInputPw = sc.nextLine();	// +Á¤±Ô½Ä °Ë»ç
+			strInputPw = sc.nextLine();	// +ì •ê·œì‹ ê²€ì‚¬
 			if (strInputPw.length() > MAX_SIZE) {
 				System.out.println("PW Length Over");
 				continue;
 			}
 
-			// ¼­¹ö °¡Á¤
-			// Å¬¶ó: ·Î±×ÀÎ ¹öÆ° Å¬¸¯ event ¹ß»ı
-			// id¸¦ DB¿¡¼­ find Çß´Ù°í °¡Á¤ (Áßº¹x) 		// pw ÇØ½Ã°ª°ú equals
+			// ì„œë²„ ê°€ì •
+			// í´ë¼: ë¡œê·¸ì¸ ë²„íŠ¼ í´ë¦­ event ë°œìƒ
+			// idë¥¼ DBì—ì„œ find í–ˆë‹¤ê³  ê°€ì • (ì¤‘ë³µx) 		// pw í•´ì‹œê°’ê³¼ equals
 			if (!arrUserData[0].equals(strInputId) || !arrUserData[1].equals(strInputPw)) {
 				System.out.println("login false");
 				continue;
@@ -48,14 +48,14 @@ public class Login {
 			
 			System.out.println("-------------------");
 			
-			// ´ëÀÔ break // Å¬¶ó¿¡ Á¤º¸¸¦ ³Ñ±ä´Ù.
+			// ëŒ€ì… break // í´ë¼ì— ì •ë³´ë¥¼ ë„˜ê¸´ë‹¤.
 			if (bLogin = true)
 				break;
 			
 		} while (true);
 
-		// Å¬¶ó
-		System.out.printf("%s ´ÔÀÌ ·Î±×ÀÎ ÇÏ¼Ì½À´Ï´Ù.", arrUserData[0]);
+		// í´ë¼
+		System.out.printf("%s ë‹˜ì´ ë¡œê·¸ì¸ í•˜ì…¨ìŠµë‹ˆë‹¤.", arrUserData[0]);
 
 		sc.close();
 	}

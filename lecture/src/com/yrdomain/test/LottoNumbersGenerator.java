@@ -14,13 +14,13 @@ public class LottoNumbersGenerator {
 		// shuffle internal logic keyword : for / random / swap
 		Collections.shuffle(listNumbers);
 
-		// ÃßÃ·
+		// ì¶”ì²¨
 		List<Integer> listWinningNumber = listNumbers.subList(0, 6);
 		Integer iBonusNumber = listNumbers.get(6);
 
 		Collections.sort(listWinningNumber);
 
-		System.out.println("\t[´çÃ· ¹øÈ£]\t+\t [º¸³Ê½º]");
+		System.out.println("\t[ë‹¹ì²¨ ë²ˆí˜¸]\t+\t [ë³´ë„ˆìŠ¤]");
 		System.out.println(listWinningNumber + "\t/\t[" + iBonusNumber + "]");
 	}
 }

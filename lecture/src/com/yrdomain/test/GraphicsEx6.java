@@ -26,13 +26,13 @@ class GraphicsEx6 extends Frame {
 	}
 
 	public void paint(java.awt.Graphics g) {
-		//ÀÌÅ¬¸³½ºÀÇ src Æú´õ¿¡ ÀÌ¹ÌÁö¸¦ ³ÖÀ¸¸é ÀÚµ¿À¸·Î binÆú´õ¿¡ ÀÌ¹ÌÁö ÆÄÀÏÀÌ º¹»çµÊ. ±×·¯¹Ç·Î getResource ·Î °¡Á®¿Ã ¼ö ÀÖÀ½
+		//ì´í´ë¦½ìŠ¤ì˜ src í´ë”ì— ì´ë¯¸ì§€ë¥¼ ë„£ìœ¼ë©´ ìë™ìœ¼ë¡œ biní´ë”ì— ì´ë¯¸ì§€ íŒŒì¼ì´ ë³µì‚¬ë¨. ê·¸ëŸ¬ë¯€ë¡œ getResource ë¡œ ê°€ì ¸ì˜¬ ìˆ˜ ìˆìŒ
 
 		img = Toolkit.getDefaultToolkit().getImage(GraphicsEx6.class.getResource("").getPath()+"dog.jpg");
 
 //img = Toolkit.getDefaultToolkit().getImage("C:/sou/002_javabasic02/java_basic_02/bin/pack00_TemporaryPackage/testpic.jpg"); 
 
-		g.drawImage(img, 50, 80, 200, 200, this);  // g.drawImage(ÀÌ¹ÌÁö, xÁÂÇ¥, yÁÂÇ¥, ³ôÀÌ, ³Êºñ, this)
+		g.drawImage(img, 50, 80, 200, 200, this);  // g.drawImage(ì´ë¯¸ì§€, xì¢Œí‘œ, yì¢Œí‘œ, ë†’ì´, ë„ˆë¹„, this)
 
 	}
 

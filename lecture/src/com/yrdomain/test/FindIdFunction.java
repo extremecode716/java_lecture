@@ -3,23 +3,23 @@ package com.yrdomain.test;
 import java.util.Arrays;
 import java.util.Scanner;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class FindIdFunction {
 
 	static final int MAX_SIZE = 50;
 
 	private static boolean isInputData(final String[] _arrStrInputData, Scanner _sc) {
-		// Å¬¶ó °¡Á¤
-		System.out.println("¾ÆÀÌµğ¸¦ Ã£À¸½Ã·Á¸é email °ú name À» ÀÔ·ÂÇÏ½Ã¿À.");
+		// í´ë¼ ê°€ì •
+		System.out.println("ì•„ì´ë””ë¥¼ ì°¾ìœ¼ì‹œë ¤ë©´ email ê³¼ name ì„ ì…ë ¥í•˜ì‹œì˜¤.");
 		System.out.print("email: ");
-		_arrStrInputData[0] = _sc.nextLine(); // +Á¤±Ô½Ä °Ë»ç ÇÒ °Í
+		_arrStrInputData[0] = _sc.nextLine(); // +ì •ê·œì‹ ê²€ì‚¬ í•  ê²ƒ
 		if (_arrStrInputData[0].length() > MAX_SIZE) {
 			System.out.println("Email Length Over");
 			return false;
 		}
 
 		System.out.print("name: ");
-		_arrStrInputData[1] = _sc.nextLine(); // +Á¤±Ô½Ä °Ë»ç ÇÒ °Í
+		_arrStrInputData[1] = _sc.nextLine(); // +ì •ê·œì‹ ê²€ì‚¬ í•  ê²ƒ
 		if (_arrStrInputData[1].length() > MAX_SIZE) {
 			System.out.println("Name Length Over");
 			return false;
@@ -29,8 +29,8 @@ public class FindIdFunction {
 	}
 
 	private static boolean isFindId(final String[] _arrUserData, final String[] _arrStrInputData) {
-		// ¼­¹ö °¡Á¤
-		// DB Find ÇØ¼­ ºñ±³
+		// ì„œë²„ ê°€ì •
+		// DB Find í•´ì„œ ë¹„êµ
 		if (_arrStrInputData[0].equals(_arrUserData[1]) && _arrStrInputData[1].equals(_arrUserData[2])) {
 			return true;
 		}
@@ -39,11 +39,11 @@ public class FindIdFunction {
 	}
 
 	private static void printAsteriskId(final String[] _arrUserData, final char[] _arrAsteriskId) {
-		// Å¬¶ó
+		// í´ë¼
 		System.out.println("------------------------------");
-		System.out.println("¾ÆÀÌµğ Ã£±â ¼º°ø");
+		System.out.println("ì•„ì´ë”” ì°¾ê¸° ì„±ê³µ");
 
-		////////// ¾Æ½ºÅ×¸¯ id ////////////
+		////////// ì•„ìŠ¤í…Œë¦­ id ////////////
 		// final char[] _arrAsteriskId = new char[arrStrUser[0].length() + 1];
 		_arrUserData[0].getChars(0, _arrUserData[0].length() / 3, _arrAsteriskId, 0);
 		Arrays.fill(_arrAsteriskId, _arrUserData[0].length() / 3, _arrUserData[0].length() / 3 * 2, '*');
@@ -56,13 +56,13 @@ public class FindIdFunction {
 	}
 
 	public static void main(String[] args) {
-		// ¼­¹ö °ËÁõ
-		// Email ÁÖ¼Ò·Î ID Ã£±â
+		// ì„œë²„ ê²€ì¦
+		// Email ì£¼ì†Œë¡œ ID ì°¾ê¸°
 		// ID Email name
-		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB ÀúÀå Á¤º¸ (Áßº¹x)
-		// ÀÚ¹Ù ³»ºÎ µ¥ÀÌÅÍµµ final ÇØÁÙ °Í
+		final String[] arrStrUser = { "ExtremeCode", "code@gmail.com", "ExtremeCode" }; // DB ì €ì¥ ì •ë³´ (ì¤‘ë³µx)
+		// ìë°” ë‚´ë¶€ ë°ì´í„°ë„ final í•´ì¤„ ê²ƒ
 
-		// String ÂüÁ¶ÇüÀ¸·Î ¾²±â À§ÇØ ¹è¿­·Î ¹ŞÀ½
+		// String ì°¸ì¡°í˜•ìœ¼ë¡œ ì“°ê¸° ìœ„í•´ ë°°ì—´ë¡œ ë°›ìŒ
 		// String strInputEmail = null;
 		// String strInputName = null;
 		final String[] arrStrInputData = new String[2];
@@ -86,11 +86,11 @@ public class FindIdFunction {
 				break;
 			}
 
-			System.out.println("email¿¡ ¸Â´Â ¾ÆÀÌµğ°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("emailì— ë§ëŠ” ì•„ì´ë””ê°€ ì—†ìŠµë‹ˆë‹¤.");
 			System.out.println("------------------------------");
 		} while (true);
 
-		// ¾Æ½ºÅ×¸¯ id
+		// ì•„ìŠ¤í…Œë¦­ id
 		final char[] arrAsteriskId = new char[arrStrUser[0].length() + 1];
 		printAsteriskId(arrStrUser, arrAsteriskId);
 

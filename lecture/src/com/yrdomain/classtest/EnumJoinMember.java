@@ -1,6 +1,6 @@
 package com.yrdomain.classtest;
-// ÀÛ¼ºÀÚ: ExtremeCode
-// ÆÄÀÏ:EnumJoinMember.java
+// ìž‘ì„±ìž: ExtremeCode
+// íŒŒì¼:EnumJoinMember.java
 public enum EnumJoinMember {
 	JOINMEMBER_SUCCEED,
 	JOINMEMBER_FAILED,
@@ -8,7 +8,7 @@ public enum EnumJoinMember {
 	LOGIN_FAILED,
 	WITHDRAW_SUCCED,
 	WITHDRAW_FAILED,
-	// Á¤±Ô½Ä ¼º°ø ½ÃÀÛ
+	// ì •ê·œì‹ ì„±ê³µ ì‹œìž‘
 	REGULAR_SUCCEED_START,
 	REGULAR_LASTNAME_SUCCED,
 	REGULAR_FIRSTNAME_SUCCED,
@@ -17,8 +17,8 @@ public enum EnumJoinMember {
 	REGULAR_PHONENUMBER_SUCCED,
 	REGULAR_SUCCEED,
 	REGULAR_SUCCEED_END,
-	// Á¤±Ô½Ä ¼º°ø ³¡
-	// Á¤±Ô½Ä ½ÇÆÐ ½ÃÀÛ
+	// ì •ê·œì‹ ì„±ê³µ ë
+	// ì •ê·œì‹ ì‹¤íŒ¨ ì‹œìž‘
 	REGULAR_FAILED_START,
 	REGULAR_LASTNAME_FAILED,
 	REGULAR_FIRSTNAME_FAILED,
@@ -27,8 +27,8 @@ public enum EnumJoinMember {
 	REGULAR_PHONENUMBER_FAILED,
 	REGULAR_FAILED,
 	REGULAR_FAILED_END,
-	// Á¤±Ô½Ä ½ÇÆÐ ³¡
-	// °Ë»ö ¼º°ø ½ÃÀÛ
+	// ì •ê·œì‹ ì‹¤íŒ¨ ë
+	// ê²€ìƒ‰ ì„±ê³µ ì‹œìž‘
 	FIND_SUCCED_START,
 	FIND_LASTNAME_SUCCED,
 	FIND_FIRSTNAME_SUCCED,
@@ -37,8 +37,8 @@ public enum EnumJoinMember {
 	FIND_PHONENUMBER_SUCCED,
 	FIND_SUCCED,
 	FIND_SUCCED_END,
-	// °Ë»ö ¼º°ø ³¡
-	// °Ë»ö ½ÇÆÐ ½ÃÀÛ
+	// ê²€ìƒ‰ ì„±ê³µ ë
+	// ê²€ìƒ‰ ì‹¤íŒ¨ ì‹œìž‘
 	FIND_FAILED_START,
 	FIND_LASTNAME_FAILED,
 	FIND_FIRSTNAME_FAILED,
@@ -47,8 +47,8 @@ public enum EnumJoinMember {
 	FIND_PHONENUMBER_FAILED,
 	FIND_FAILED,
 	FIND_FAILED_END,
-	// °Ë»ö ½ÇÆÐ ³¡
-	// check ¼º°ø ½ÃÀÛ
+	// ê²€ìƒ‰ ì‹¤íŒ¨ ë
+	// check ì„±ê³µ ì‹œìž‘
 	CHECK_SUCCED_START,
 	CHECK_LASTNAME_SUCCED,
 	CHECK_FIRSTNAME_SUCCED,
@@ -57,8 +57,8 @@ public enum EnumJoinMember {
 	CHECK_PHONENUMBER_SUCCED,
 	CHECK_SUCCED,
 	CHECK_SUCCED_END,
-	// check ¼º°ø ³¡
-	// check ½ÇÆÐ ½ÃÀÛ
+	// check ì„±ê³µ ë
+	// check ì‹¤íŒ¨ ì‹œìž‘
 	CHECK_FAILED_START,
 	CHECK_LASTNAME_FAILED,
 	CHECK_FIRSTNAME_FAILED,
@@ -67,5 +67,5 @@ public enum EnumJoinMember {
 	CHECK_PHONENUMBER_FAILED,
 	CHECK_FAILED,
 	CHECK_FAILED_END,
-	// check ½ÇÆÐ ³¡
+	// check ì‹¤íŒ¨ ë
 }

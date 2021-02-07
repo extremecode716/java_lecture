@@ -14,7 +14,7 @@ public class Calculator1 {
 
 	void execute() {
 		double result = avg(7, 10);
-		println("½ÇÇà°á°ú: " + result);
+		println("ì‹¤í–‰ê²°ê³¼: " + result);
 	}
 
 	void println(String message) {

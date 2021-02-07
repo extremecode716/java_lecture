@@ -1,16 +1,16 @@
 package com.yrdomain.ch06;
 
 public class Car3 {
-	// ÇÊµå
+	// í•„ë“œ
 	String model;
 	int speed;
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	Car3(String model) {
 		this.model = model;
 	}
 
-	// ¸Ş¼Òµå
+	// ë©”ì†Œë“œ
 	void setSpeed(int speed) {
 		this.speed = speed;
 	}
@@ -18,7 +18,7 @@ public class Car3 {
 	void run() {
 		for (int i = 10; i <= 50; i += 10) {
 			this.setSpeed(i);
-			System.out.println(this.model + "°¡ ´Ş¸³´Ï´Ù.(½Ã¼Ó:" + this.speed + "km/h");
+			System.out.println(this.model + "ê°€ ë‹¬ë¦½ë‹ˆë‹¤.(ì‹œì†:" + this.speed + "km/h");
 		}
 	}
 }

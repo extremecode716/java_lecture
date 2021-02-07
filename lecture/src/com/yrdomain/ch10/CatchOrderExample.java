@@ -12,11 +12,11 @@ public class CatchOrderExample {
 			int result = value1 + value2;
 			System.out.println(data1 + "+" + data2 + "=" + result);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("½ÇÇà ¸Å°³°ªÀÇ ¼ö°¡ ºÎÁ·ÇÕ´Ï´Ù.");
+			System.out.println("ì‹¤í–‰ ë§¤ê°œê°’ì˜ ìˆ˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.");
 		} catch (Exception e) {
-			System.out.println("½ÇÇà¿¡ ¹®Á¦°¡ ÀÖ½À´Ï´Ù.");
+			System.out.println("ì‹¤í–‰ì— ë¬¸ì œê°€ ìˆìŠµë‹ˆë‹¤.");
 		} finally {
-			System.out.println("´Ù½Ã ½ÇÇàÇÏ¼¼¿ä.");
+			System.out.println("ë‹¤ì‹œ ì‹¤í–‰í•˜ì„¸ìš”.");
 		}
 
 	}

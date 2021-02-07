@@ -3,7 +3,7 @@ package com.yrdomain.ch04;
 public class WhileSumFrom1To100Example {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stuba
 		int sum = 0;
 
 		int i = 1;
@@ -13,7 +13,7 @@ public class WhileSumFrom1To100Example {
 			++i;
 		}
 
-		System.out.println("1~" + (i - 1) + " ÇÕ : " + sum);
+		System.out.println("1~" + (i - 1) + " í•© : " + sum);
 	}
 
 }

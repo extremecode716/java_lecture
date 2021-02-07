@@ -1,12 +1,12 @@
 package com.yrdomain.ch06;
 
 public class Korean {
-	//ÇÊµå
-	String nation = "´ëÇÑ¹Î±¹";
+	//í•„ë“œ
+	String nation = "ëŒ€í•œë¯¼êµ­";
 	String name;
 	String ssn;
 	
-	//»ı¼ºÀÚ
+	//ìƒì„±ì
 	public Korean(String n, String s) {
 		name = n;
 		ssn = s;

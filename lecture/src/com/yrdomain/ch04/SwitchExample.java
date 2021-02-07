@@ -8,22 +8,22 @@ public class SwitchExample {
 
 		switch (num) {
 		case 1:
-			System.out.println("1¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("1ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		case 2:
-			System.out.println("2¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("2ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		case 3:
-			System.out.println("3¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("3ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		case 4:
-			System.out.println("4¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("4ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		case 5:
-			System.out.println("5¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("5ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("6¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
+			System.out.println("6ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
 			break;
 		}
 	}

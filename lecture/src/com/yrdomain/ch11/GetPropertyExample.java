@@ -10,16 +10,16 @@ public class GetPropertyExample {
 		String userName = System.getProperty("user.name");
 		String userHome = System.getProperty("user.home");
 		
-		// °³º° ¼Ó¼º ÀĞ±â
-		System.out.println("¿î¿µÃ¼Á¦ ÀÌ¸§: " + osName);
-		System.out.println("»ç¿ëÀÚ ÀÌ¸§: " + userName);
-		System.out.println("»ç¿ëÀÚ È¨µğ·ºÅä¸®: " + userHome);
+		// ê°œë³„ ì†ì„± ì½ê¸°
+		System.out.println("ìš´ì˜ì²´ì œ ì´ë¦„: " + osName);
+		System.out.println("ì‚¬ìš©ì ì´ë¦„: " + userName);
+		System.out.println("ì‚¬ìš©ì í™ˆë””ë ‰í† ë¦¬: " + userHome);
 		
 		System.out.println("-----------------------");
 		System.out.println(" [ key ] value");
 		System.out.println("-----------------------");
 		
-		// ¸ğµç ¼Ó¼ºÀÇ Å°¿Í °ªÀ» Ãâ·Â
+		// ëª¨ë“  ì†ì„±ì˜ í‚¤ì™€ ê°’ì„ ì¶œë ¥
 		Properties props = System.getProperties();
 		Set<?> keys = props.keySet();
 		for(Object objKey : keys) {

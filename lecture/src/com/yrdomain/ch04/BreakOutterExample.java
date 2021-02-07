@@ -12,7 +12,7 @@ public class BreakOutterExample {
 				}
 			}
 		}
-		System.out.println("ÇÁ·Î±×·¥ ½ÇÇà Á¾·á");
+		System.out.println("í”„ë¡œê·¸ëž¨ ì‹¤í–‰ ì¢…ë£Œ");
 	}
 
 }

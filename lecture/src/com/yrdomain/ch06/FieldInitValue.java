@@ -1,7 +1,7 @@
 package com.yrdomain.ch06;
 
 public class FieldInitValue {
-	// ÇÊµå
+	// í•„ë“œ
 	byte byteField;
 	short shortField;
 	int intField;

@@ -1,14 +1,14 @@
 package com.yrdomain.ch06;
 
 public class Car {
-	// ÇÊµå
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model = "±×·£Àú";
-	String color = "°ËÁ¤";
+	// í•„ë“œ
+	String company = "í˜„ëŒ€ìë™ì°¨";
+	String model = "ê·¸ëœì €";
+	String color = "ê²€ì •";
 	int maxSpeed = 350;
 	int speed;
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	Car() {
 
 	}

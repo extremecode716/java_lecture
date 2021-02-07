@@ -1,29 +1,29 @@
 package com.yrdomain.classtest.a_package;
 
 public class Parrent {
-	public String m_strParrentPublic = "ParrentÀÇ public ÇÊµå";
-	protected String m_strParrentProtected = "ParrentÀÇ protected ÇÊµå";
-	String m_strParrentDefault = "ParrentÀÇ default ÇÊµå";
-	private String m_strParrentPrivate = "ParrentÀÇ private ÇÊµå";
+	public String m_strParrentPublic = "Parrentì˜ public í•„ë“œ";
+	protected String m_strParrentProtected = "Parrentì˜ protected í•„ë“œ";
+	String m_strParrentDefault = "Parrentì˜ default í•„ë“œ";
+	private String m_strParrentPrivate = "Parrentì˜ private í•„ë“œ";
 
 
 	public Parrent() {
-		System.out.println("ºÎ¸ğ »ı¼ºÀÚ È£Ãâ");
+		System.out.println("ë¶€ëª¨ ìƒì„±ì í˜¸ì¶œ");
 	}
 
 	public void methodParrentPublic() {
-		System.out.println("ParrentÀÇ public ¸Ş¼Òµå");
+		System.out.println("Parrentì˜ public ë©”ì†Œë“œ");
 	}
 
 	protected void methodParrentProtected() {
-		System.out.println("ParrentÀÇ protected ¸Ş¼Òµå");
+		System.out.println("Parrentì˜ protected ë©”ì†Œë“œ");
 	}
 
 	void methodParrentDefault() {
-		System.out.println("ParrentÀÇ Default ¸Ş¼Òµå");
+		System.out.println("Parrentì˜ Default ë©”ì†Œë“œ");
 	}
 
 	private void methodParrentPrivate() {
-		System.out.println("ParrentÀÇ private ¸Ş¼Òµå");
+		System.out.println("Parrentì˜ private ë©”ì†Œë“œ");
 	}
 }

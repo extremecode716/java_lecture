@@ -1,20 +1,20 @@
 package com.yrdomain.ch06;
 
-// ´Ù¸¥ »ı¼ºÀÚ¸¦ È£ÃâÇØ¼­ Áßº¹ ÄÚµå ÁÙÀÌ±â
+// ë‹¤ë¥¸ ìƒì„±ìë¥¼ í˜¸ì¶œí•´ì„œ ì¤‘ë³µ ì½”ë“œ ì¤„ì´ê¸°
 public class Car_this {
-	// ÇÊµå
-	String company = "Çö´ëÀÚµ¿Â÷";
+	// í•„ë“œ
+	String company = "í˜„ëŒ€ìë™ì°¨";
 	String model;
 	String color;
 	int maxSpeed;
 
-	// »ı¼ºÀÚ
+	// ìƒì„±ì
 	Car_this() {
 
 	}
 
 	Car_this(String _model) {
-		this(_model, "Àº»ö", 250);
+		this(_model, "ì€ìƒ‰", 250);
 	}
 
 	Car_this(String _model, String _color) {

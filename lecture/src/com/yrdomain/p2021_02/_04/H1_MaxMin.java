@@ -10,7 +10,7 @@ public class H1_MaxMin {
 		int iMax = Integer.MIN_VALUE, iMin = Integer.MAX_VALUE;
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Á¤¼ö 3°³¸¦ ÀÔ·Â ÇÏ¼¼¿ä?");
+		System.out.println("ì •ìˆ˜ 3ê°œë¥¼ ìž…ë ¥ í•˜ì„¸ìš”?");
 		for (int i = 0; i < ARR_MAX_SIZE; ++i) {
 			arrNum[i] = sc.nextInt();
 			iMax = (arrNum[i] > iMax) ? (arrNum[i]) : (iMax);

@@ -2,15 +2,15 @@ package com.yrdomain.test;
 
 import java.util.Scanner;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class LoginFunction {
 
 	static final int MAX_SIZE = 25;
 	
 	private static boolean isLogin(final String[] _arrUserData, final String[] _arrStrInputData) {
-		// ¼­¹ö °¡Á¤
-		// Å¬¶ó: ·Î±×ÀÎ ¹öÆ° Å¬¸¯ event ¹ß»ı
-		// id¸¦ DB¿¡¼­ find Çß´Ù°í °¡Á¤ (Áßº¹x) // pw ÇØ½Ã°ª°ú equals
+		// ì„œë²„ ê°€ì •
+		// í´ë¼: ë¡œê·¸ì¸ ë²„íŠ¼ í´ë¦­ event ë°œìƒ
+		// idë¥¼ DBì—ì„œ find í–ˆë‹¤ê³  ê°€ì • (ì¤‘ë³µx) // pw í•´ì‹œê°’ê³¼ equals
 		if (!_arrUserData[0].equals(_arrStrInputData[0]) || !_arrUserData[1].equals(_arrStrInputData[1])) {
 			System.out.println("login false");
 			return false;
@@ -20,17 +20,17 @@ public class LoginFunction {
 	}
 
 	private static boolean isInputData(final String[] _arrStrInputData, Scanner _sc) {
-		// Å¬¶ó °¡Á¤
-		System.out.println("------·Î±×ÀÎ Ã¢------");
+		// í´ë¼ ê°€ì •
+		System.out.println("------ë¡œê·¸ì¸ ì°½------");
 		System.out.print("ID: ");
-		_arrStrInputData[0] = _sc.nextLine(); // +Á¤±Ô½Ä °Ë»ç
+		_arrStrInputData[0] = _sc.nextLine(); // +ì •ê·œì‹ ê²€ì‚¬
 		if (_arrStrInputData[0].length() > MAX_SIZE) {
 			System.out.println("ID Length Over");
 			return false;
 		}
 		
 		System.out.print("PW: ");
-		_arrStrInputData[1] = _sc.nextLine(); // +Á¤±Ô½Ä °Ë»ç
+		_arrStrInputData[1] = _sc.nextLine(); // +ì •ê·œì‹ ê²€ì‚¬
 		if (_arrStrInputData[1].length() > MAX_SIZE) {
 			System.out.println("PW Length Over");
 			return false;
@@ -40,18 +40,18 @@ public class LoginFunction {
 	}
 	
 	private static void printLoginId(final String[] _arrUserData) {
-		// Å¬¶ó
-		System.out.printf("%s ´ÔÀÌ ·Î±×ÀÎ ÇÏ¼Ì½À´Ï´Ù.", _arrUserData[0]);
+		// í´ë¼
+		System.out.printf("%s ë‹˜ì´ ë¡œê·¸ì¸ í•˜ì…¨ìŠµë‹ˆë‹¤.", _arrUserData[0]);
 
 	}
 	
 	public static void main(String[] args) {
-		// ¼­¹ö °ËÁõ
+		// ì„œë²„ ê²€ì¦
 		// ID PW
-		final String[] arrUserData = { "ExtremeCode", "123123" }; // DB ÀúÀå Á¤º¸·Î °¡Á¤(IDÁßº¹x), PW´Â ÇØ½Ã°ª
-		// ÀÚ¹Ù¿¡¼­ ³»ºÎ µ¥ÀÌÅÍ »ó¼öÈ­ ÀÏ¹İÀûÀÎ ¹æ¹ıÀÌ ¾ÈµÊ. final String[] final arrUserData; (x)
+		final String[] arrUserData = { "ExtremeCode", "123123" }; // DB ì €ì¥ ì •ë³´ë¡œ ê°€ì •(IDì¤‘ë³µx), PWëŠ” í•´ì‹œê°’
+		// ìë°”ì—ì„œ ë‚´ë¶€ ë°ì´í„° ìƒìˆ˜í™” ì¼ë°˜ì ì¸ ë°©ë²•ì´ ì•ˆë¨. final String[] final arrUserData; (x)
 
-		// String ÂüÁ¶ÇüÀ¸·Î ¾²±â À§ÇØ ¹è¿­·Î ¹ŞÀ½
+		// String ì°¸ì¡°í˜•ìœ¼ë¡œ ì“°ê¸° ìœ„í•´ ë°°ì—´ë¡œ ë°›ìŒ
 		//String strInputId = null;
 		//String strInputPw = null;
 		final String[] arrStrInputData = new String[2];
@@ -75,7 +75,7 @@ public class LoginFunction {
 			
 			System.out.println("-------------------");
 
-			// ´ëÀÔ break // Å¬¶ó¿¡ Á¤º¸¸¦ ³Ñ±ä´Ù.
+			// ëŒ€ì… break // í´ë¼ì— ì •ë³´ë¥¼ ë„˜ê¸´ë‹¤.
 			if (bLogin = true)
 				break;
 

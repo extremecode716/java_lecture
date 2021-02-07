@@ -2,8 +2,8 @@ package com.yrdomain.classtest;
 
 import java.util.Scanner;
 
-// ÀÛ¼ºÀÚ: ExtremeCode
-// User Á¢±Ù ±ÇÇÑ // Enum À¸·Î º¯°æ ÇØµµ µÊ
+// ì‘ì„±ì: ExtremeCode
+// User ì ‘ê·¼ ê¶Œí•œ // Enum ìœ¼ë¡œ ë³€ê²½ í•´ë„ ë¨
 class EnumUserPermission {
 	public static final int USER_NO_PERMISSION = 0;
 	public static final int USER_ADMIN_PERMISSION = 1;
@@ -12,7 +12,7 @@ class EnumUserPermission {
 	public static final int USER_GENERAL_PERMISSION = 4;
 }
 
-// °Ô½ÃÆÇ Å¬·¡½º && ½ÇÇà Å¬·¡½º.
+// ê²Œì‹œíŒ í´ë˜ìŠ¤ && ì‹¤í–‰ í´ë˜ìŠ¤.
 public class Board {
 	// Static field //
 	public static final int NOMAR_TYPE = 0;
@@ -20,9 +20,9 @@ public class Board {
 	public static final Scanner SC = new Scanner(System.in);
 
 	///////////////////////////////////////////////////////
-	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION; // À¯Àú Á¤º¸µµ µû·Î »¬ °Í.(ÀÓ½Ã)
+	private int m_iUserPermission = EnumUserPermission.USER_NO_PERMISSION; // ìœ ì € ì •ë³´ë„ ë”°ë¡œ ëº„ ê²ƒ.(ì„ì‹œ)
 	private int m_iNoticeType = NOMAR_TYPE;
-	// ¸¸¾à °øÁö¶û °Ô½ÃÆÇÀ¸·Î »ó¼ÓÀ¸·Î ³ª´²¼­ ÇÒ²¨¸é, À§ ÇÊµå 2°³¸¸ Ã³¸®ÇÏ¸é µÊ.
+	// ë§Œì•½ ê³µì§€ë‘ ê²Œì‹œíŒìœ¼ë¡œ ìƒì†ìœ¼ë¡œ ë‚˜ëˆ ì„œ í• êº¼ë©´, ìœ„ í•„ë“œ 2ê°œë§Œ ì²˜ë¦¬í•˜ë©´ ë¨.
 	private int m_iNo = 0;
 	private int m_iSeq = 0;
 	private String m_strSubject = "";
@@ -58,14 +58,14 @@ public class Board {
 	}
 
 	private void viewControlPage() {
-		printlnString("Å¸ÀÌÇÎÇÒ Å°¿öµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		printlnString("íƒ€ì´í•‘í•  í‚¤ì›Œë“œë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int userPermission = getUserPermission();
-		String strKeyword = "( Á¦¸ñ || º»¹® ";
+		String strKeyword = "( ì œëª© || ë³¸ë¬¸ ";
 		if (userPermission == EnumUserPermission.USER_MANAGER_PERMISSION
 				|| userPermission == EnumUserPermission.USER_ADMIN_PERMISSION) {
-			strKeyword += "|| °øÁö ";
+			strKeyword += "|| ê³µì§€ ";
 		}
-		strKeyword += "|| Á¦Ãâ )";
+		strKeyword += "|| ì œì¶œ )";
 		printlnString(strKeyword);
 	}
 
@@ -74,14 +74,14 @@ public class Board {
 		String strInputData = SC.nextLine();
 
 		switch (strInputData) {
-		case "°øÁö":
+		case "ê³µì§€":
 			int userPermission = getUserPermission();
 			int noticeType = getNoticeType();
 			if (userPermission == EnumUserPermission.USER_MANAGER_PERMISSION
 					|| userPermission == EnumUserPermission.USER_ADMIN_PERMISSION) {
 				noticeType = (noticeType == NOMAR_TYPE) ? (NOTICE_TYPE) : (NOMAR_TYPE);
 				setNoticeType(noticeType);
-				printString("°øÁö»çÇ×( ");
+				printString("ê³µì§€ì‚¬í•­( ");
 				switch (noticeType) {
 				case NOTICE_TYPE:
 					printString("o");
@@ -94,21 +94,21 @@ public class Board {
 			}
 			printlnString("");
 			break;
-		case "Á¦¸ñ":
-			printString("Á¦¸ñ: ");
+		case "ì œëª©":
+			printString("ì œëª©: ");
 			printlnString(inputSubject());
 			break;
-		case "º»¹®":
-			printString("º»¹®: ");
+		case "ë³¸ë¬¸":
+			printString("ë³¸ë¬¸: ");
 			printlnString(inputBodyText());
 			break;
-		case "Á¦Ãâ":
+		case "ì œì¶œ":
 			if (submit()) {
-				printlnString("Á¦Ãâ ÇÏ¿´½À´Ï´Ù.");
+				printlnString("ì œì¶œ í•˜ì˜€ìŠµë‹ˆë‹¤.");
 				viewReadPage();
 				return false;
 			} else {
-				printlnString("ºóÄ­ÀÌ ÀÖ¾î¼­ Á¦ÃâµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+				printlnString("ë¹ˆì¹¸ì´ ìˆì–´ì„œ ì œì¶œë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤.");
 			}
 			break;
 		}
@@ -121,7 +121,7 @@ public class Board {
 		int noticeType = getNoticeType();
 		if (userPermission == EnumUserPermission.USER_MANAGER_PERMISSION
 				|| userPermission == EnumUserPermission.USER_ADMIN_PERMISSION) {
-			printString("°øÁö»çÇ×( ");
+			printString("ê³µì§€ì‚¬í•­( ");
 			switch (noticeType) {
 			case NOTICE_TYPE:
 				printString("o");
@@ -143,25 +143,25 @@ public class Board {
 	}
 
 	public void viewWritePage() {
-		printlnString("---°Ô½ÃÆÇ ÀÛ¼º---");
-		printString("¸Ş´º: ");
+		printlnString("---ê²Œì‹œíŒ ì‘ì„±---");
+		printString("ë©”ë‰´: ");
 		viewNoticeType();
 		printlnString("");
-		printString("Á¦¸ñ: ");
+		printString("ì œëª©: ");
 		printlnString(getSubject());
-		printString("³»¿ë: ");
+		printString("ë‚´ìš©: ");
 		printString(getBodyText());
 
 		printlnString("");
-		printlnString("[Á¦Ãâ ¹öÆ°]");
+		printlnString("[ì œì¶œ ë²„íŠ¼]");
 		printlnString("-------------");
 	}
 
 	public void viewReadPage() {
-		printlnString("---°Ô½ÃÆÇ---");
-		printString("Á¦¸ñ: ");
+		printlnString("---ê²Œì‹œíŒ---");
+		printString("ì œëª©: ");
 		printlnString(getSubject());
-		printString("³»¿ë: ");
+		printString("ë‚´ìš©: ");
 		printString(getBodyText());
 		printlnString("");
 		printlnString("---------");
@@ -179,32 +179,32 @@ public class Board {
 		return strBodyText;
 	}
 
-	// ¸ñ·Ï¿¡ º¸¿©ÁÙ µ¥ÀÌÅÍ ºÒ·¯¿À´Â ÇÔ¼ö
+	// ëª©ë¡ì— ë³´ì—¬ì¤„ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ëŠ” í•¨ìˆ˜
 	public void showList() {
 	}
 
-	// »ó¼¼È­¸é¿¡ º¸¿©ÁÙ µ¥ÀÌÅÍ ºÒ·¯¿À´Â ÇÔ¼ö
+	// ìƒì„¸í™”ë©´ì— ë³´ì—¬ì¤„ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ëŠ” í•¨ìˆ˜
 	public void showView(int _seq) {
 	}
 
-	// µî·ÏÈ­¸é¿¡ º¸¿©ÁÙ µ¥ÀÌÅÍ ºÒ·¯¿À´Â ÇÔ¼ö
+	// ë“±ë¡í™”ë©´ì— ë³´ì—¬ì¤„ ë°ì´í„° ë¶ˆëŸ¬ì˜¤ëŠ” í•¨ìˆ˜
 	public void showForm() {
 		showView(m_iSeq);
 		procInsert();
 	}
 
-	// ÀÔ·Â ¹ŞÀº µ¥ÀÌÅÍ¸¦ µğºñ¿¡ µî·ÏÇÏ´Â ÇÁ·Î¼¼½º
+	// ì…ë ¥ ë°›ì€ ë°ì´í„°ë¥¼ ë””ë¹„ì— ë“±ë¡í•˜ëŠ” í”„ë¡œì„¸ìŠ¤
 	public int procInsert() {
 		return 1;
 	}
 
-	// ¼±ÅÃµÈ µ¥ÀÌÅÍ »èÁ¦ÇÏ´Â ÇÁ·Î¼¼½º : ½ÇÁ¦ µ¥ÀÌÅÍº£ÀÌ½º »ó¿¡¼­ »èÁ¦
+	// ì„ íƒëœ ë°ì´í„° ì‚­ì œí•˜ëŠ” í”„ë¡œì„¸ìŠ¤ : ì‹¤ì œ ë°ì´í„°ë² ì´ìŠ¤ ìƒì—ì„œ ì‚­ì œ
 	public int procUpdate(int _seq) {
 		return 1;
 	}
 
-	// ¼±ÅÃµÈ µ¥ÀÌÅÍ¸¦ »èÁ¦ µÈ °ÍÃ³·³ ¾÷µ¥ÀÌÆ® ÇÏ´Â ÇÁ·Î¼¼½º:
-	// ½ÇÁ¦ µ¥ÀÌÅÍ´Â »èÁ¦ µÇÁö ¾Ê°í ³²¾Æ ÀÖÀ¸¸ç »èÁ¦ ¿©ºÎ ÇÊµå¸¦ n->y ·Î Ã³¸®
+	// ì„ íƒëœ ë°ì´í„°ë¥¼ ì‚­ì œ ëœ ê²ƒì²˜ëŸ¼ ì—…ë°ì´íŠ¸ í•˜ëŠ” í”„ë¡œì„¸ìŠ¤:
+	// ì‹¤ì œ ë°ì´í„°ëŠ” ì‚­ì œ ë˜ì§€ ì•Šê³  ë‚¨ì•„ ìˆìœ¼ë©° ì‚­ì œ ì—¬ë¶€ í•„ë“œë¥¼ n->y ë¡œ ì²˜ë¦¬
 	public int proUelete(int _seq) {
 		return 1;
 	}
@@ -258,7 +258,7 @@ public class Board {
 		SC.close();
 	}
 }
-//////////////////// ºÎ¸ğ////////////////////
+//////////////////// ë¶€ëª¨////////////////////
 //String m_strFileName = "";
 //String m_strFileExtension = "";
 //
@@ -278,7 +278,7 @@ public class Board {
 //public void like() {
 //}
 ////////////////////////////////////////////////
-//°øÁö
+//ê³µì§€
 class Board_Notice extends Board {
 
 	public Board_Notice() {
@@ -288,7 +288,7 @@ class Board_Notice extends Board {
 	}
 }
 
-//ÀÏ¹İ
+//ì¼ë°˜
 class Board_Nomar extends Board {
 
 	public Board_Nomar() {

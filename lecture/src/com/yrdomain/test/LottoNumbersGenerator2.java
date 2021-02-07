@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-// Çö½ÇÀûÀÎ ·Î¶Ç ÃßÃ·±â ( È¿À² ½Å°æ x )
+// í˜„ì‹¤ì ì¸ ë¡œë˜ ì¶”ì²¨ê¸° ( íš¨ìœ¨ ì‹ ê²½ x )
 public class LottoNumbersGenerator2 {
 
 	public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class LottoNumbersGenerator2 {
 
 		Collections.sort(listWinningNumber);
 
-		System.out.println("\t[´çÃ· ¹øÈ£]\t+\t [º¸³Ê½º]");
+		System.out.println("\t[ë‹¹ì²¨ ë²ˆí˜¸]\t+\t [ë³´ë„ˆìŠ¤]");
 		
 		Collections.shuffle(listNumbers);
 		Integer iBonusNumber = listNumbers.get(0);

@@ -7,13 +7,13 @@ public class IfExample {
 		int score = 93;
 		
 		if(score >= 90) {
-			System.out.println("Á¡¼ö°¡ 90º¸´Ù Å®´Ï´Ù.");
-			System.out.println("µî±ŞÀº A ÀÔ´Ï´Ù.");
+			System.out.println("ì ìˆ˜ê°€ 90ë³´ë‹¤ í½ë‹ˆë‹¤.");
+			System.out.println("ë“±ê¸‰ì€ A ì…ë‹ˆë‹¤.");
 		}
 		
 		if(score<90) {
-			System.out.println("Á¡¼ö°¡ 90º¸´Ù ÀÛ½À´Ï´Ù.");
-			System.out.println("µî±ŞÀº B ÀÔ´Ï´Ù");
+			System.out.println("ì ìˆ˜ê°€ 90ë³´ë‹¤ ì‘ìŠµë‹ˆë‹¤.");
+			System.out.println("ë“±ê¸‰ì€ B ì…ë‹ˆë‹¤");
 		}
 	}
 

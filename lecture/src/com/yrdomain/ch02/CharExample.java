@@ -3,15 +3,15 @@ package com.yrdomain.ch02;
 public class CharExample {
 
 	public static void main(String[] args) {
-		char c1 = 'A'; // ¹®ÀÚ¸¦ Á÷Á¢ ÀúÀå
-		char c2 = (char) 65; // 10Áø¼ö·Î ÀúÀå
-		char c3 = '\u0041'; // 16Áø¼ö·Î ÀúÀå
+		char c1 = 'A'; // ë¬¸ìë¥¼ ì§ì ‘ ì €ì¥
+		char c2 = (char) 65; // 10ì§„ìˆ˜ë¡œ ì €ì¥
+		char c3 = '\u0041'; // 16ì§„ìˆ˜ë¡œ ì €ì¥
 
-		char c4 = '°¡'; // ¹®ÀÚ¸¦ Á÷Á¢ ÀúÀå
-		char c5 = (char) 44032; // 10Áø¼ö·Î ÀúÀå
+		char c4 = 'ê°€'; // ë¬¸ìë¥¼ ì§ì ‘ ì €ì¥
+		char c5 = (char) 44032; // 10ì§„ìˆ˜ë¡œ ì €ì¥
 		char c6 = '\uac00';
 
-		int uniCode = (int) c1; // À¯´ÏÄÚµå ¾ò±â
+		int uniCode = (int) c1; // ìœ ë‹ˆì½”ë“œ ì–»ê¸°
 		System.out.println(c1);
 		System.out.println(c2);
 		System.out.println(c3);

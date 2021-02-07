@@ -3,18 +3,18 @@ package com.yrdomain.ch11;
 public class SystemTimeExample {
 
 	public static void main(String[] args) {
-		long time1 = System.nanoTime(); // ½ÃÀÛ ½Ã°£
+		long time1 = System.nanoTime(); // ì‹œìž‘ ì‹œê°„
 		
 		int sum = 0;
 		for(int i =1; i<=1000000; ++i) {
 			sum += i;
 		}
 		
-		long time2 = System.nanoTime(); // ³¡ ½Ã°£
+		long time2 = System.nanoTime(); // ë ì‹œê°„
 		
-		System.out.println("1~1000000±îÁöÀÇ ÇÕ: " + sum);
-		System.out.println("°è»ê¿¡ " + (time2-time1) + " ³ª³ëÃÊ°¡ ¼Ò¿äµÇ¾ú½À´Ï´Ù.");
-		System.out.println((time2-time1)/1000000000.0+"ÃÊ");
+		System.out.println("1~1000000ê¹Œì§€ì˜ í•©: " + sum);
+		System.out.println("ê³„ì‚°ì— " + (time2-time1) + " ë‚˜ë…¸ì´ˆê°€ ì†Œìš”ë˜ì—ˆìŠµë‹ˆë‹¤.");
+		System.out.println((time2-time1)/1000000000.0+"ì´ˆ");
 	}
 
 }

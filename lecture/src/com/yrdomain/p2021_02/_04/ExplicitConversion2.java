@@ -4,24 +4,24 @@ public class ExplicitConversion2 {
 
     public static void main( String[] args ) {
     	
-        // intÇü º¯¼ö¸¦ 97·Î ÃÊ±âÈ­
+        // intí˜• ë³€ìˆ˜ë¥¼ 97ë¡œ ì´ˆê¸°í™”
         int intValue = 97;
 
-        // intÇü º¯¼ö °ªÀ» charÇüÀ¸·Î º¯È¯ ÈÄ ÇÒ´ç
+        // intí˜• ë³€ìˆ˜ ê°’ì„ charí˜•ìœ¼ë¡œ ë³€í™˜ í›„ í• ë‹¹
         char charValue = ( char )intValue;
         System.out.println( "charValue = " + charValue );
 
-        // floatÇü º¯¼ö ÃÊ±âÈ­.
+        // floatí˜• ë³€ìˆ˜ ì´ˆê¸°í™”.
         float floatValue = 3.14F;
 
-        // floatÇü º¯¼ö °ªÀ» intÇüÀ¸·Î º¯È¯ ÈÄ ÇÒ´ç
+        // floatí˜• ë³€ìˆ˜ ê°’ì„ intí˜•ìœ¼ë¡œ ë³€í™˜ í›„ í• ë‹¹
         int intValue2 = ( int )floatValue;
         System.out.println( "intValue2 = " + intValue2 );
 
-        // floatÇü º¯¼ö ÃÊ±âÈ­
+        // floatí˜• ë³€ìˆ˜ ì´ˆê¸°í™”
         double doubleValue = 21.12345;
         
-        // doubleÇü º¯¼ö °ªÀ» floatÇüÀ¸·Î º¯È¯ ÈÄ ÇÒ´ç
+        // doubleí˜• ë³€ìˆ˜ ê°’ì„ floatí˜•ìœ¼ë¡œ ë³€í™˜ í›„ í• ë‹¹
         float floatValue2 = ( float )doubleValue;
         System.out.println( "floatValue2 = " + floatValue2 );
     }

@@ -7,12 +7,12 @@ public class BitShiftExample {
 		System.out.println("-8 >> 3 = " + (-8>>3));
 		System.out.println("-8 >>> 3 = "+ (-8>>>3));
 		
-		//½¬ÇÁÆ® ¿¬»êÀÚ
+		//ì‰¬í”„íŠ¸ ì—°ì‚°ìž
 		/*
-		 *a << b : Á¤¼ö aÀÇ °¢ ºñÆ®¸¦ b¸¸Å­ ¿ÞÂÊÀ¸·Î ÀÌµ¿(ºóÀÚ¸®´Â 0À¸·Î Ã¤¿öÁø´Ù.)
-		 *a >> b : Á¤¼ö aÀÇ °¢ ºñÆ®¸¦ b¸¸Å­ ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿(ºóÀÚ¸®´Â Á¤¼ö aÀÇ ÃÖ»óÀ§ ºÎÈ£ ºñÆ®(MSB)¿Í °°Àº °ªÀ¸·Î Ã¤¿öÁø´Ù.
+		 *a << b : ì •ìˆ˜ aì˜ ê° ë¹„íŠ¸ë¥¼ bë§Œí¼ ì™¼ìª½ìœ¼ë¡œ ì´ë™(ë¹ˆìžë¦¬ëŠ” 0ìœ¼ë¡œ ì±„ì›Œì§„ë‹¤.)
+		 *a >> b : ì •ìˆ˜ aì˜ ê° ë¹„íŠ¸ë¥¼ bë§Œí¼ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™(ë¹ˆìžë¦¬ëŠ” ì •ìˆ˜ aì˜ ìµœìƒìœ„ ë¶€í˜¸ ë¹„íŠ¸(MSB)ì™€ ê°™ì€ ê°’ìœ¼ë¡œ ì±„ì›Œì§„ë‹¤.
 		 * MSB: most significant bit
-		 *a >>> b : Á¤¼ö aÀÇ °¢ ºñÆ®¸¦ b¸¸Å­ ¿À¸¥ÂÊÀ¸·Î ÀÌµ¿(ºóÀÚ¸®´Â 0À¸·Î Ã¤¿öÁø´Ù.)
+		 *a >>> b : ì •ìˆ˜ aì˜ ê° ë¹„íŠ¸ë¥¼ bë§Œí¼ ì˜¤ë¥¸ìª½ìœ¼ë¡œ ì´ë™(ë¹ˆìžë¦¬ëŠ” 0ìœ¼ë¡œ ì±„ì›Œì§„ë‹¤.)
 		 */
 	
 		

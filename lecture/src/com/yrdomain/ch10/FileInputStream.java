@@ -8,12 +8,12 @@ public class FileInputStream implements AutoCloseable{
 	}
 	
 	public void read() {
-		System.out.println(file + "À» ÀĞ½À´Ï´Ù.");
+		System.out.println(file + "ì„ ì½ìŠµë‹ˆë‹¤.");
 	}
 	
 	@Override
 	public void close() throws Exception{
-		System.out.println(file+ "À» ´İ½À´Ï´Ù.");
+		System.out.println(file+ "ì„ ë‹«ìŠµë‹ˆë‹¤.");
 	}
 	
 	public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class FileInputStream implements AutoCloseable{
 			fis.read();
 //			throw new Exception();
 		}catch(Exception e) {
-			System.out.println("¿¹¿Ü Ã³¸® ÄÚµå°¡ ½ÇÇàµÇ¾ú½À´Ï´Ù.");
+			System.out.println("ì˜ˆì™¸ ì²˜ë¦¬ ì½”ë“œê°€ ì‹¤í–‰ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}finally {
 			System.out.println("finally");
 		}

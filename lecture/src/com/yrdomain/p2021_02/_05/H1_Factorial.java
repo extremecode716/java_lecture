@@ -8,10 +8,10 @@ public class H1_Factorial {
 		Scanner sc = new Scanner(System.in);
 		BigInteger bigN = null;
 
-		System.out.println("N ÆÑÅä¸®¾ó °è»ê -> À½¼ö°¡ ¾Æ´Ñ NÀ» ÀÔ·ÂÇÏ½Ã¿À.");
+		System.out.println("N íŒ©í† ë¦¬ì–¼ ê³„ì‚° -> ìŒìˆ˜ê°€ ì•„ë‹Œ Nì„ ì…ë ¥í•˜ì‹œì˜¤.");
 		String strInputN = sc.nextLine();
 		if (!isNumber(strInputN)) {
-			System.out.println("error Á¤¼ö °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä!");
+			System.out.println("error ì •ìˆ˜ ê°’ì„ ì…ë ¥í•˜ì„¸ìš”!");
 		} else {
 			// or bigN = sc.nextBigInteger();
 			bigN = new BigInteger(strInputN);
@@ -21,7 +21,7 @@ public class H1_Factorial {
 				bigFactorialResult = bigFactorialResult.multiply(i);
 			}
 			
-			System.out.println("ÆÑÅä¸®¾ó °á°ú°ª : " + bigFactorialResult);
+			System.out.println("íŒ©í† ë¦¬ì–¼ ê²°ê³¼ê°’ : " + bigFactorialResult);
 		}
 		sc.close();
 	}

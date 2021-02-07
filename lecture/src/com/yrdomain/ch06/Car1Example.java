@@ -5,18 +5,18 @@ public class Car1Example {
 	public static void main(String[] args) {
 		Car1 myCar1 = new Car1();
 
-		myCar1.setGas(5); // Car1ÀÇ setGas() ¸Ş¼Òµå È£Ãâ
+		myCar1.setGas(5); // Car1ì˜ setGas() ë©”ì†Œë“œ í˜¸ì¶œ
 
-		boolean gasState = myCar1.isLefGas(); // CarÀÇ isLeftGas() ¸Ş¼Òµå È£Ãâ.
+		boolean gasState = myCar1.isLefGas(); // Carì˜ isLeftGas() ë©”ì†Œë“œ í˜¸ì¶œ.
 		if (gasState) {
-			System.out.println("Ãâ¹ßÇÕ´Ï´Ù.");
-			myCar1.run(); // CarÀÇ run() ¸Ş¼Òµå È£Ãâ
+			System.out.println("ì¶œë°œí•©ë‹ˆë‹¤.");
+			myCar1.run(); // Carì˜ run() ë©”ì†Œë“œ í˜¸ì¶œ
 		}
 
-		if (myCar1.isLefGas()) { // CarÀÇ isLeftGas() ¸Ş¼Òµå È£Ãâ
-			System.out.println("gas¸¦ ÁÖÀÔÇÒ ÇÊ¿ä°¡ ¾ø½À´Ï´Ù.");
+		if (myCar1.isLefGas()) { // Carì˜ isLeftGas() ë©”ì†Œë“œ í˜¸ì¶œ
+			System.out.println("gasë¥¼ ì£¼ì…í•  í•„ìš”ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		} else {
-			System.out.println("gas¸¦ ÁÖÀÔÇØ¼¼¿ä.");
+			System.out.println("gasë¥¼ ì£¼ì…í•´ì„¸ìš”.");
 		}
 	}
 

@@ -4,19 +4,19 @@ public class PromotionExample {
 	public static void main(String[] args) {
 		/*
 		 byte byteValue = 65;
-		 char charValue = byteValue; // ÄÄÆÄÀÏ ¿¡·¯ 
-		 // ¾Ï½ÃÀû(ÀÚµ¿) Å¸ÀÔ º¯È¯ÀÌ ¾ÈµÇ´Â ÀÌÀ¯
-		 // char´Â À¯´ÏÄÚµå 2byte·Î À½¼ö¸¦ ÀúÀåÇÒ ¼ö ¾øÀ¸³ª, byte´Â À½¼ö¸¦ ÀúÀåµÉ ¼ö ÀÖ±â ¶§¹®¿¡ ÀÚµ¿ º¯È¯x
-		 char charData = (char) byteData; // (0) ¸í½ÃÀû Å¸ÀÔ º¯È¯
+		 char charValue = byteValue; // ì»´íŒŒì¼ ì—ëŸ¬ 
+		 // ì•”ì‹œì (ìë™) íƒ€ì… ë³€í™˜ì´ ì•ˆë˜ëŠ” ì´ìœ 
+		 // charëŠ” ìœ ë‹ˆì½”ë“œ 2byteë¡œ ìŒìˆ˜ë¥¼ ì €ì¥í•  ìˆ˜ ì—†ìœ¼ë‚˜, byteëŠ” ìŒìˆ˜ë¥¼ ì €ì¥ë  ìˆ˜ ìˆê¸° ë•Œë¬¸ì— ìë™ ë³€í™˜x
+		 char charData = (char) byteData; // (0) ëª…ì‹œì  íƒ€ì… ë³€í™˜
 		 */
 		
 		byte byteValue = 10;
 		int intValue = byteValue;	//int <- byte
 		System.out.println(intValue);
 		
-		char charValue = '°¡';
+		char charValue = 'ê°€';
 		intValue = charValue;		//int <- char
-		System.out.println("°¡ÀÇ À¯´ÏÄÚµå=" + intValue);
+		System.out.println("ê°€ì˜ ìœ ë‹ˆì½”ë“œ=" + intValue);
 		
 		intValue = 500;
 		long longValue = intValue;	//long <- int

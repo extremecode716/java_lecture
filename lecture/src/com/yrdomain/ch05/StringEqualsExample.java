@@ -3,32 +3,32 @@ package com.yrdomain.ch05;
 public class StringEqualsExample {
 
 	public static void main(String[] args) {
-		String strVar1 = "½Å¹ÎÃ¶";
-		String strVar2 = "½Å¹ÎÃ¶";
+		String strVar1 = "ì‹ ë¯¼ì² ";
+		String strVar2 = "ì‹ ë¯¼ì² ";
 		
 		System.out.println("strVar1: " + Integer.toHexString(strVar1.hashCode()));
 
 		if (strVar1 == strVar2) {
-			System.out.println("strVar1°ú strVar2´Â ÂüÁ¶°¡ °°À½");
+			System.out.println("strVar1ê³¼ strVar2ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ");
 		} else {
-			System.out.println("strVar1°ú strVar2´Â ÂüÁ¶°¡ ´Ù¸§");
+			System.out.println("strVar1ê³¼ strVar2ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„");
 		}
 
 		if (strVar1.equals(strVar2)) {
-			System.out.println("strVar1°ú strVar2´Â ¹®ÀÚ¿­ÀÌ °°À½");
+			System.out.println("strVar1ê³¼ strVar2ëŠ” ë¬¸ìì—´ì´ ê°™ìŒ");
 		}
 
-		String strVar3 = new String("½Å¹ÎÃ¶");
-		String strVar4 = new String("½Å¹ÎÃ¶");
+		String strVar3 = new String("ì‹ ë¯¼ì² ");
+		String strVar4 = new String("ì‹ ë¯¼ì² ");
 
 		if (strVar3 == strVar4) {
-			System.out.println("strVar3°ú strVar4´Â ÂüÁ¶°¡ °°À½");
+			System.out.println("strVar3ê³¼ strVar4ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ");
 		} else {
-			System.out.println("strVar3°ú strVar4´Â ÂüÁ¶°¡ ´Ù¸§");
+			System.out.println("strVar3ê³¼ strVar4ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„");
 		}
 
 		if (strVar3.equals(strVar4)) {
-			System.out.println("strVar3°ú strVar4´Â ¹®ÀÚ¿­ÀÌ °°À½");
+			System.out.println("strVar3ê³¼ strVar4ëŠ” ë¬¸ìì—´ì´ ê°™ìŒ");
 		}
 	}
 

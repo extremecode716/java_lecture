@@ -7,7 +7,7 @@ public class ArrayCopyExample {
 		String[] oldStrArray = { "Java", "array", "copy" };
 		String[] newStrArray = new String[5];
 
-		// æË¿∫ ∫πªÁ(shallow copy)
+		// ÏñïÏùÄ Î≥µÏÇ¨(shallow copy)
 		System.arraycopy(oldStrArray, 0, newStrArray, 0, oldStrArray.length);
 
 		for (int i = 0; i < newStrArray.length; ++i) {

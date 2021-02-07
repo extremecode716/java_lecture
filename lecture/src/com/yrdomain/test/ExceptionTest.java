@@ -1,40 +1,40 @@
 package com.yrdomain.test;
 
-// ÀÛ¼ºÀÚ: ExtremeCode
+// ì‘ì„±ì: ExtremeCode
 public class ExceptionTest {
 	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 
 		String data = null;
-////////////Null ¿¹¿ÜÃ³¸®1///////////////////
+////////////Null ì˜ˆì™¸ì²˜ë¦¬1///////////////////
 		if (null == data) {
 			System.out.println("NullPointerException!!");
 		} else {
 			System.out.println(data.toString());
 		}
-////////////Null ¿¹¿ÜÃ³¸®2///////////////////
-//////////object·Î up casting ÈÄ °Ë»ç////////
+////////////Null ì˜ˆì™¸ì²˜ë¦¬2///////////////////
+//////////objectë¡œ up casting í›„ ê²€ì‚¬////////
 		printIsNull(isNull(data));
-/////////////¼ıÀÚ ÆÇº° ¿¹¿ÜÃ³¸®1/////////////(Á¤±Ô½Ä ¹æ½Ä)
+/////////////ìˆ«ì íŒë³„ ì˜ˆì™¸ì²˜ë¦¬1/////////////(ì •ê·œì‹ ë°©ì‹)
 		data = "String";
 		printIsNumber(data.matches("[+-]?\\d*(\\.\\d+)?"));
-/////////////¼ıÀÚ ÆÇº° ¿¹¿ÜÃ³¸®2/////////////(¸ğµç ¹®ÀÚ¿­ Å½»ö ¹æ½Ä)
+/////////////ìˆ«ì íŒë³„ ì˜ˆì™¸ì²˜ë¦¬2/////////////(ëª¨ë“  ë¬¸ìì—´ íƒìƒ‰ ë°©ì‹)
 		printIsNumber(isNumber(data));
-/////////////¼ıÀÚ ÆÇº° ¿¹¿ÜÃ³¸®3/////////////(¿À¹ö·Îµå ¹æ½Ä)
+/////////////ìˆ«ì íŒë³„ ì˜ˆì™¸ì²˜ë¦¬3/////////////(ì˜¤ë²„ë¡œë“œ ë°©ì‹)
 		printIsNumber(isNumber(10.4));
-/////////////¼ıÀÚ ÆÇº° ¿¹¿ÜÃ³¸®4///////////////(Java 8 ÀÌ»ó¿¡¼­ °¡´ÉÇÏ´Ù°í ÇÔ)
+/////////////ìˆ«ì íŒë³„ ì˜ˆì™¸ì²˜ë¦¬4///////////////(Java 8 ì´ìƒì—ì„œ ê°€ëŠ¥í•˜ë‹¤ê³  í•¨)
 		data = "00100";
 		printIsNumber(data.chars().allMatch(Character::isDigit)); 
 
-////////////ÀÏ¹İÀûÀÎ ¿¹¿ÜÃ³¸®//////////////	
+////////////ì¼ë°˜ì ì¸ ì˜ˆì™¸ì²˜ë¦¬//////////////	
 		try {
 			int iValue = Integer.parseInt(data);
 			System.out.println(iValue);
 		} catch (NumberFormatException e) {
 			System.out.println("NumberFormatException!!");
 		}
-//////////¹è¿­Àº class·Î ·¦ÇÎÇØ¼­ index°ü¸®ÇØ¼­ ¿¹¿ÜÃ³¸®//(·¦ÇÎ ¹æ½Ä)
-//ÇÏ°Å³ª, try catch(ArrayIndexOutOfBoundsException e)À¸·Î ¿¹¿ÜÃ³¸®//(ÀÏ¹İÀûÀÎ ¿¹¿ÜÃ³¸®)
+//////////ë°°ì—´ì€ classë¡œ ë©í•‘í•´ì„œ indexê´€ë¦¬í•´ì„œ ì˜ˆì™¸ì²˜ë¦¬//(ë©í•‘ ë°©ì‹)
+//í•˜ê±°ë‚˜, try catch(ArrayIndexOutOfBoundsException e)ìœ¼ë¡œ ì˜ˆì™¸ì²˜ë¦¬//(ì¼ë°˜ì ì¸ ì˜ˆì™¸ì²˜ë¦¬)
 //...
 ////////////////////////////////////////////
 	}
@@ -58,9 +58,9 @@ public class ExceptionTest {
 
 	static void printIsNumber(boolean _b) {
 		if (_b) {
-			System.out.println("data´Â Number·Î º¯È¯ °¡´É.");
+			System.out.println("dataëŠ” Numberë¡œ ë³€í™˜ ê°€ëŠ¥.");
 		} else {
-			System.out.println("data´Â Number·Î º¯È¯ ºÒ°¡´É.");
+			System.out.println("dataëŠ” Numberë¡œ ë³€í™˜ ë¶ˆê°€ëŠ¥.");
 		}
 	}
 	
@@ -75,7 +75,7 @@ public class ExceptionTest {
 		if (_b) {
 			System.out.println("NullPointerException!!");
 		} else {
-			System.out.println("NullÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("Nullì´ ì•„ë‹™ë‹ˆë‹¤.");
 		}
 	}
 }

@@ -1,15 +1,15 @@
 package com.yrdomain.classtest;
 
-// ÀÛ¼ºÀÚ: ExtremeCode // model
-// ÆÄÀÏ: Member.java
+// ì‘ì„±ì: ExtremeCode // model
+// íŒŒì¼: Member.java
 public class Member {
 
-	private String m_strLastName; // ¼º
-	private String m_strFirstName; // ÀÌ¸§
-	private String m_strEmailID; // ID: ÀÌ¸ŞÀÏ ÁÖ¼Ò
-	private String m_strPw; // PW: ºñ¹Ğ¹øÈ£
-	private String m_strPhoneNumber; // ÀüÈ­¹øÈ£
-	private boolean m_bTermsOfService; // ÀÌ¿ë¾à°ü
+	private String m_strLastName; // ì„±
+	private String m_strFirstName; // ì´ë¦„
+	private String m_strEmailID; // ID: ì´ë©”ì¼ ì£¼ì†Œ
+	private String m_strPw; // PW: ë¹„ë°€ë²ˆí˜¸
+	private String m_strPhoneNumber; // ì „í™”ë²ˆí˜¸
+	private boolean m_bTermsOfService; // ì´ìš©ì•½ê´€
 
 	public Member() {
 		m_strLastName = null;

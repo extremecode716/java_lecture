@@ -2,7 +2,7 @@ package com.yrdomain.test;
 
 import java.util.Arrays;
 
-//ÀÛ¼ºÀÚ : ExtremeCode
+//ì‘ì„±ì : ExtremeCode
 public class Lotto_HelpCode1 {
 
 	public static void main(String[] args) {

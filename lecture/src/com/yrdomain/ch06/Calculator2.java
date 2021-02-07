@@ -2,12 +2,12 @@ package com.yrdomain.ch06;
 
 public class Calculator2 {
 
-	// Á¤»ç°¢ÇüÀÇ ³ĞÀÌ
+	// ì •ì‚¬ê°í˜•ì˜ ë„“ì´
 	double areaRectangle(double width) {
 		return width * width;
 	}
 
-	// Á÷»ç°¢ÇüÀÇ ³ĞÀÌ
+	// ì§ì‚¬ê°í˜•ì˜ ë„“ì´
 	double areaRectangle(double width, double height) {
 		return width * height;
 	}

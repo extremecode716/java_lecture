@@ -8,7 +8,7 @@ public class NumberFormatExceptionExample {
 		String data2 = "a100";
 		
 		int value1 = Integer.parseInt(data1);
-		int value2 = Integer.parseInt(data2); // NumberFormatException ¹ß»ı
+		int value2 = Integer.parseInt(data2); // NumberFormatException ë°œìƒ
 		
 		int result = value1 + value2;
 		System.out.println(data1 + "+" + data2 + "=" + result);

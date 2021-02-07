@@ -10,7 +10,7 @@ public class GcExample {
 		emp = new Employee(2);
 		emp = new Employee(3);
 		
-		System.out.print("emp°¡ ÃÖÁ¾ÀûÀ¸·Î ÂüÁ¶ÇÏ´Â »ç¿ø¹øÈ£:");
+		System.out.print("empê°€ ìµœì¢…ì ìœ¼ë¡œ ì°¸ì¡°í•˜ëŠ” ì‚¬ì›ë²ˆí˜¸:");
 		System.out.println(emp.eno);
 		System.gc();
 	}
@@ -21,11 +21,11 @@ class Employee{
 	
 	public Employee(int eno) {
 		this.eno = eno;
-		System.out.println("Employee(" + eno + ") °¡ ¸Ş¸ğ¸®¿¡ »ı¼ºµÊ");
+		System.out.println("Employee(" + eno + ") ê°€ ë©”ëª¨ë¦¬ì— ìƒì„±ë¨");
 	}
 	
 	@Override
 	public void finalize() throws Throwable{
-		System.out.println("Employee("+ eno + ") ÀÌ ¸Ş¸ğ¸®¿¡¼­ Á¦°ÅµÊ");
+		System.out.println("Employee("+ eno + ") ì´ ë©”ëª¨ë¦¬ì—ì„œ ì œê±°ë¨");
 	}
 }

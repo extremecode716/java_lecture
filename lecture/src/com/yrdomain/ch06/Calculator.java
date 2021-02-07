@@ -2,9 +2,9 @@ package com.yrdomain.ch06;
 
 public class Calculator {
 
-	// ¸Ş¼Òµå
+	// ë©”ì†Œë“œ
 	void powerOn() {
-		System.out.println("Àü¿øÀ» ÄÕ´Ï´Ù");
+		System.out.println("ì „ì›ì„ ì¼­ë‹ˆë‹¤");
 	}
 
 	int plus(int x, int y) {
@@ -18,6 +18,6 @@ public class Calculator {
 	}
 
 	void powerOff() {
-		System.out.println("Àü¿øÀ» ²ü´Ï´Ù");
+		System.out.println("ì „ì›ì„ ë•ë‹ˆë‹¤");
 	}
 }

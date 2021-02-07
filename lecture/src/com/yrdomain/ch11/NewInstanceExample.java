@@ -5,6 +5,7 @@ public class NewInstanceExample {
 	public static void main(String[] args) {
 		try {
 			Class<?> clazz = Class.forName("com.yrdomain.ch11.ReceiveAction");
+			@SuppressWarnings("deprecation")
 			Action action = (Action) clazz.newInstance();
 			action.execute();
 		} catch (ClassNotFoundException e) {

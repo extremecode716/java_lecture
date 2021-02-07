@@ -7,12 +7,13 @@ public class ThrowsExample {
 		try {
 			findClass();
 		}catch(ClassNotFoundException e) {
-			System.out.println("Å¬·¡½º°¡ Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println("í´ë˜ìŠ¤ê°€ ì¡´ì¬í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 	}
 	
 	public static void findClass() throws ClassNotFoundException{
-		Class clazz = Class.forName("java.lang.String2");
+		@SuppressWarnings("unused")
+		Class<?> clazz = Class.forName("java.lang.String2");
 	}
 
 }

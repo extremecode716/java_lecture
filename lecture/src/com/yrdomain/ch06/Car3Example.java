@@ -5,8 +5,8 @@ public class Car3Example {
 	
 	
 	public static void main(String[] args) {
-		Car3 myCar = new Car3("Æ÷¸£½¦");
-		Car3 yourCar = new Car3("º¥Ã÷");
+		Car3 myCar = new Car3("í¬ë¥´ì‰");
+		Car3 yourCar = new Car3("ë²¤ì¸ ");
 
 		myCar.run();
 		yourCar.run();
