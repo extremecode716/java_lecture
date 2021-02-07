@@ -1,4 +1,4 @@
-package com.mydomain.p2021_02._04;
+package com.mydomain.p2021_02;
 
 import java.util.Scanner;
 

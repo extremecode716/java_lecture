@@ -1,4 +1,4 @@
-package com.mydomain.p2021_02._05;
+package com.mydomain.p2021_02;
 
 import java.util.Collections;
 import java.util.ArrayList;

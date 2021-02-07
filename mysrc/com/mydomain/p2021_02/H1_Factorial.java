@@ -1,4 +1,4 @@
-package com.mydomain.p2021_02._05;
+package com.mydomain.p2021_02;
 
 import java.math.BigInteger;
 import java.util.Scanner;
