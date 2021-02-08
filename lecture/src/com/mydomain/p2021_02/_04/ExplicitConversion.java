@@ -1,5 +1,6 @@
 package com.mydomain.p2021_02._04;
 
+// 명시적 변환
 public class ExplicitConversion {
 
 	public static void main(String[] args) {

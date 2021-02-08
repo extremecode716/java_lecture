@@ -1,6 +1,5 @@
 package com.mydomain.p2021_02._04;
 
-
 public class Oper01 {
 
 	public static void main(String[] args) {

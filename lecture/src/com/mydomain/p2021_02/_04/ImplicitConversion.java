@@ -1,5 +1,6 @@
 package com.mydomain.p2021_02._04;
 
+// 암시적 변환
 public class ImplicitConversion {
 
 	public static void main(String[] args) {
@@ -25,6 +26,10 @@ public class ImplicitConversion {
 		double doubleValue2 = intValue;
 		System.out.println("doubleValue1 =" + doubleValue1);
 		System.out.println("doubleValue2 =" + doubleValue2);
+
+		long longValue = 6666666666L;
+		float floatValue3 = longValue;
+		System.out.println("floatValue3 = " + floatValue3);
 
 	}// main end
 }// class end

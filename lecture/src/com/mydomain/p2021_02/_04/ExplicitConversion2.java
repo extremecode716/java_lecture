@@ -24,5 +24,11 @@ public class ExplicitConversion2 {
         // double형 변수 값을 float형으로 변환 후 할당
         float floatValue2 = ( float )doubleValue;
         System.out.println( "floatValue2 = " + floatValue2 );
+        
+    	float floatValue3 = 5.3f;
+		long longValue = (long)floatValue3;
+	
+		System.out.println("floatValue3 = " + longValue);
+        
     }
 }
