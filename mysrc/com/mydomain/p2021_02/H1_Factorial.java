@@ -1,5 +1,11 @@
 package com.mydomain.p2021_02;
-
+//과제.
+//1. 키보드를 이용해서 입력한 정수의 팩토리얼을
+//   구하는 프로그램을 작성 하세요?
+//	ex) 3! = 3 * 2 * 1
+//                  5! = 5 * 4 * 3 * 2 * 1
+//	    32! 은 20억을 넘어감 
+//	for문 또는 반복문으로 
 import java.math.BigInteger;
 import java.util.Scanner;
 
