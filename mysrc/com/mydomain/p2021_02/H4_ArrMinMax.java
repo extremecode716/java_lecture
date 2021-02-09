@@ -7,7 +7,7 @@ package com.mydomain.p2021_02;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class H1_ArrMinMax {
+public class H4_ArrMinMax {
 	static final int ARR_MAX_SIZE = 5;
 
 	public static void main(String[] args) {

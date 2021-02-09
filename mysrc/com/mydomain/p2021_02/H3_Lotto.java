@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class H2_Lotto {
+public class H3_Lotto {
 	public static void main(String[] args) {
 		List<Integer> listNumbers = new ArrayList<Integer>();
 		for (int i = 1; i < 46; ++i) {

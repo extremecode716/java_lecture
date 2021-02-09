@@ -9,7 +9,7 @@ package com.mydomain.p2021_02;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-public class H1_Factorial {
+public class H2_Factorial {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		BigInteger bigN = null;
