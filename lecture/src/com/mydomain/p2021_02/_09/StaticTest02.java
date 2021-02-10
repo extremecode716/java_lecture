@@ -14,7 +14,7 @@ class StaticTest2 {
 
 public class StaticTest02 {
 	public static void main(String[] args) {
-		System.out.println(StaticTest2.a);// a가 private으로 선언되어서 컴파일 에러 발생
+//		System.out.println(StaticTest2.a);// a가 private으로 선언되어서 컴파일 에러 발생
 		System.out.println(StaticTest2.getA());
 
 		StaticTest2 s1 = new StaticTest2();

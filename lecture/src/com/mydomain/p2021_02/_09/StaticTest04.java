@@ -7,7 +7,7 @@ class StaticTest4{
   // 정적 메소드 안에는 정적 필드만 사용할 수 있다.
   public static void printA(){  	// 정적 메소드
     System.out.println(a);         
-    System.out.println(b);   		//컴파일 에러 발생
+//    System.out.println(b);   		//컴파일 에러 발생
   }
 
   public void printB(){        
