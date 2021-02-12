@@ -1,7 +1,7 @@
 package com.mydomain.test;
 
 import java.lang.instrument.Instrumentation;
-
+// Test Code
 // JVM에 선행 처리가 필요하다고 한다... Q)
 // MANIFEST.MF->Premain-Class: InstrumentationAgent 추가
 // java -javaagent:InstrumentationAgent.jar ... 
