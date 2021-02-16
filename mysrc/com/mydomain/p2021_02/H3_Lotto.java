@@ -8,7 +8,8 @@ package com.mydomain.p2021_02;
 //    Math.random() 이용해서 프로그램을 작성 하세요.
 //
 //          0.0 <= Math.random() < 1.0
-
+//제출
+//author: ExtremeCode
 import java.util.Collections;
 import java.util.ArrayList;
 import java.util.List;

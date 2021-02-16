@@ -1,42 +1,25 @@
 package com.mydomain.p2021_02;
 
-//과제. 
-//키보드를 통해서 각 회원들의 정보를 입력 받는                         
-//클래스(MemberInput)를 작성한다. 
-//이때 입력 받는 회원의 정보는 성명, 나이, 이메일, 주소를  
-//입력 받는다. 그리고 키보드로 입력한 회원의 정보는 새로운
-//회원정보를 저장하는 클래스(MemberInfo)의 멤버변수에 
-//저장을 시킨후 출력하는 프로그램을 작성하시오.
-//(단, 1명의 회원정보를 입력 받아서 처리한다. 
-// 가능하면 2명 이상의 회원 정보도 입력 받아서 처리 해본다.)
+//회원정보 입력 받는 클래스 작성.
 //제출
 //author: ExtremeCode
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-class MemberInfo {
+class MemberInfo_1 {
 	private String name;
 	private int age;
 	private String email;
 	private String address;
-
-	public MemberInfo() {
+	{
+		name = null;
+		age = 0;
+		email = null;
+		address = null;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public int getAge() {
-		return age;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public String getAddress() {
-		return address;
+	public MemberInfo_1() {
+		super();
 	}
 
 	public void setName(String name) {
@@ -57,18 +40,18 @@ class MemberInfo {
 
 	public void printInfo() {
 		System.out.println("-MemberInfo-");
-		System.out.println("성명  : " + getName());
-		System.out.println("나이  : " + getAge());
-		System.out.println("이메일 : " + getEmail());
-		System.out.println("주소  : " + getAddress());
+		System.out.println("성명  : " + name);
+		System.out.println("나이  : " + age);
+		System.out.println("이메일 : " + email);
+		System.out.println("주소  : " + address);
 	}
 }
 
-public class H5_MemberInput {
-	static int s_number_of_members = 2;
+public class H8_MemberInputEx {
+	static int s_number_of_members = 1;
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		final Scanner sc = new Scanner(System.in);
 
 		do {
 			try {
@@ -84,10 +67,10 @@ public class H5_MemberInput {
 			break;
 		} while (true);
 		String inputData = null;
-		MemberInfo[] memInfo = new MemberInfo[s_number_of_members];
+		MemberInfo_1[] memInfo = new MemberInfo_1[s_number_of_members];
 		for (int i = 0; i < memInfo.length; ++i) {
 			System.out.println((i + 1) + " 번째 회원 정보 입력 하시오.");
-			memInfo[i] = new MemberInfo();
+			memInfo[i] = new MemberInfo_1();
 
 			do {
 				System.out.print("성명  : ");
@@ -105,7 +88,7 @@ public class H5_MemberInput {
 					System.out.print("나이  : ");
 					inputData = sc.nextLine();
 					int iAge = Integer.parseInt(inputData);
-					if(iAge < 0)
+					if (iAge < 0)
 						throw new NumberFormatException();
 					memInfo[i].setAge(iAge);
 				} catch (NumberFormatException e) {

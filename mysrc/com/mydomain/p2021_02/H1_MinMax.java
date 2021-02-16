@@ -4,6 +4,8 @@ package com.mydomain.p2021_02;
 //키보드로 3개의 정수를 입력 받았을때 최대값과
 //최소값을 구하는 프로그램을 작성 하세요?
 //(단, 조건 연산자를 활용해서 작성하세요)
+//제출
+//author: ExtremeCode
 import java.util.Scanner;
 
 public class H1_MinMax {

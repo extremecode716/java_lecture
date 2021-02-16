@@ -6,6 +6,8 @@ package com.mydomain.p2021_02;
 //                  5! = 5 * 4 * 3 * 2 * 1
 //	    32! 은 20억을 넘어감 
 //	for문 또는 반복문으로 
+//제출
+//author: ExtremeCode
 import java.math.BigInteger;
 import java.util.Scanner;
 

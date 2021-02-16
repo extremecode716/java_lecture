@@ -4,6 +4,8 @@ package com.mydomain.p2021_02;
 //키보드를 이용해서 정수 5개를 입력 받은후 int형
 //배열에 저장한다. 이때 배열에 저장된 값중에서
 //최대값과 최소값을 구하는 프로그램을 작성하세요?
+//제출.
+//author: ExtremeCode
 import java.util.Scanner;
 import java.util.Arrays;
 
