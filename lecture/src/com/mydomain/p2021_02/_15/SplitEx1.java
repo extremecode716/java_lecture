@@ -1,4 +1,4 @@
-package com.mydomain.p2021_02._10;
+package com.mydomain.p2021_02._15;
 // p512
 public class SplitEx1 {
 

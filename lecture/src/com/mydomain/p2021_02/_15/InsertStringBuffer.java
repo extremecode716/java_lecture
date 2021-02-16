@@ -1,4 +1,4 @@
-package com.mydomain.p2021_02._10;
+package com.mydomain.p2021_02._15;
 
 public class InsertStringBuffer {
 	public static void main(String[] args) {

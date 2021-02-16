@@ -1,0 +1,31 @@
+과제. 
+        키보드를 통해서 각 회원들의 정보를 입력 받는                         
+        클래스(MemberInput)를 작성한다. 
+        이때 입력 받는 회원의 정보는 성명, 나이, 이메일,주소를  
+        입력 받는다. 그리고 키보드로 입력한 회원의 정보는 새로운
+        회원정보를 저장하는 클래스(MemberInfo)의 멤버변수에 
+        저장을 시킨후 출력하는 프로그램을 작성하시오.
+        (단, 1명의 회원정보를 입력 받아서 처리한다. 
+         가능하면 2명 이상의 회원 정보도 입력 받아서 처리 해본다.)
+       
+     예)   
+         MemberInput클래스 	
+	 public static void main(String[] args){
+
+
+	 }
+
+         MemberInfo클래스
+  	 private String name;
+       	 private int age;
+       	 private String email;
+             private String address;
+
+         // 생성자
+         public MemberInfo(){  
+
+         }
+       
+생성자, 접근지정자
+개터세터
+       
