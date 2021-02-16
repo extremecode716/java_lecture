@@ -6,6 +6,7 @@ import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+// Test Code
 @SuppressWarnings("serial")
 class GraphicsEx6 extends Frame {
 	Image img;
