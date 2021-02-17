@@ -10,6 +10,7 @@ package com.mydomain.p2021_02;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.stream.Collectors;
 
 public class H9_LottoSetEx {
 
@@ -20,7 +21,10 @@ public class H9_LottoSetEx {
 		while (treeSet.size() < 6) {
 			treeSet.add((Integer) (random.nextInt(45) + 1));
 		}
-
-		System.out.println("로또 번호 : " + treeSet);
+		
+		StringBuilder strBuilder = new StringBuilder(39);
+		strBuilder.append("로또 번호 : ");
+		strBuilder.append(treeSet.stream().map(num->num.toString()).collect(Collectors.joining(" / ", "( ", " )")));	
+		System.out.println(strBuilder.toString());
 	}
 }
