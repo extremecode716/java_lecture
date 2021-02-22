@@ -1,0 +1,73 @@
+﻿* 자바-오라클 연동 환경 설정
+
+1. 오라클용 JDBC Driver 파일을 자바 설치 위치(C:\Program Files\Java\jre1.8.0_211\lib\ext)로 복사한다.
+
+   C:\oraclexe\app\oracle\product\11.2.0\server\jdbc\lib\ojdbc6.jar 파일을
+
+   C:\Program Files\Java\jre1.8.0_211\lib\ext 로 복사한다
+
+2.  이클립스에서 오라클 데이터베이스 연동 설정
+    이클립스의 Project Explorer 화면에서 JRE System Library에     오른 마우스 클릭 - Properties - Installed JRE 버튼 클릭 
+    - jre8선택후 Edit 버튼 클릭 - Add External JAR 버튼 클릭후 
+    C:\Program Files\Java\jre8\lib\ext\ojdbc6.jar 파일을
+     추가한다. 
+   (ojdbc6.jar 파일이 라이버러리에 추가되면 성공~~!!)
+
+3. 이클립스 재 구동
+
+4. 간단한 자바-오라클 연동 파일을 작성한후 테스트 해본다
+
+    import java.sql.*;
+
+   public class JDBC_Connect02{
+   public static void main(String[] args)  {
+
+   /** ORACLE JDBC Driver Test *****************************************/
+	String driver = "oracle.jdbc.driver.OracleDriver"; 
+	String url = "jdbc:oracle:thin:@127.0.0.1:1521:orcl";
+   /*******************************************************************/
+
+   /** My-SQL JDBC Driver *********************************************/
+   //	String driver ="com.mysql.jdbc.Driver";
+   //	String url = "jdbc:mysql://localhost/academy";
+   /*******************************************************************/
+
+       Connection con = null;
+
+       try{
+
+         Class.forName(driver);
+
+   /**   ORACLE에서 Connection 객체 ***********************************/
+          con = DriverManager.getConnection(url, "scott", "tiger" );
+   /*******************************************************************/
+
+
+   /**   My-SQL에서 Connection 객체 ***********************************/
+   //	  con = DriverManager.getConnection(url, "totoro", "1234" );
+   /*******************************************************************/
+
+         System.out.println("데이터베이스 연결 성공!");
+
+       } catch(Exception e){
+	    	   System.out.println("데이터베이스 연결 실패!");
+		   e.printStackTrace();
+       } finally{
+		try{
+			if( con != null )         con.close();
+		   } catch(Exception e){
+			System.out.println( e.getMessage( ));  
+                                }
+      }
+    }
+  }  
+
+5. 만약 데이터베이스 연결 실패 메세지가 나올때에는 
+    C:\oracle\product\11.2.0\db_1\NETWORK\ADMIN 폴더 안에 있는 
+
+     listener.ora
+     tnsnames.ora
+
+     파일의 Host=컴퓨터 이름, Port=1521 등을 점검한다.
+
+
