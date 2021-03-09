@@ -1,0 +1,14 @@
+-- MySQL
+show databases;
+show tables;
+select * from member;
+
+-- 예1.
+create table customer( no int(4) auto_increment  primary key, 
+		       name varchar(20),
+		       email varchar(20),
+		       tel varchar(20),
+		       address varchar(50),
+		       reg_date timestamp);
+
+select * from customer;

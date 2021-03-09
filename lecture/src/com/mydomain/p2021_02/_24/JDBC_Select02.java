@@ -1,5 +1,5 @@
-package com.mydomain.p2021_02._22;
-
+package com.mydomain.p2021_02._24;
+//MySQL
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,9 +10,9 @@ import java.text.SimpleDateFormat;
 class JDBC_Select02 {
 	public static void main(String[] args) {
 
-		String driver = "oracle.jdbc.driver.OracleDriver";
-		String url = "jdbc:oracle:thin:@localhost:1521:xe";
-
+		String driver = "com.mysql.cj.jdbc.Driver";
+		String url = "jdbc:mysql://localhost/jsptest";
+		
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		// ---JDBC_Select 추가된 내용 -------
@@ -27,7 +27,7 @@ class JDBC_Select02 {
 
 		try {
 			Class.forName(driver);
-			con = DriverManager.getConnection(url, "scott", "716");
+			con = DriverManager.getConnection(url, "jspid", "jsppass");
 
 			// ---JDBC_Select 추가된 내용 -------
 			sql = "SELECT * FROM customer";
