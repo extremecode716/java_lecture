@@ -7,7 +7,7 @@
 책  : 이것이 자바다 [신용권의 Java 프로그래밍 정복] 
    
 ## 폴더
-### **mysrc/com/mydomain**
+### [**mysrc/com/mydomain**](https://github.com/extremecode716/java_lecture/tree/develop/mysrc/com/mydomain)
 * **본인이 작성한 코드 (과제,응용,Test 등)**
    
 ### lecture/src/com/mydomain   
