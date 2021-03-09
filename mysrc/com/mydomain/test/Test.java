@@ -1,9 +1,16 @@
 package com.mydomain.test;
 
+import java.lang.annotation.*;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.PARAMETER)
+@interface Def {
+	int value();
+}
 
 class A {
 	List<Integer> asd = new ArrayList<Integer>();
@@ -17,7 +24,7 @@ class A {
 		System.out.println("부모");
 		return this;
 	}
-	
+
 	protected A hi1() {
 		System.out.println("부모1");
 		return this;
@@ -39,7 +46,7 @@ class B extends A {
 	}
 }
 
-class C extends B{
+class C extends B {
 	public C(String _name, int _num) {
 		super(_name, _num);
 		this.hi1();
@@ -53,6 +60,7 @@ class Box2<T> {
 	}
 }
 
+
 public class Test {
 	String m_str = "hi";
 
@@ -60,8 +68,9 @@ public class Test {
 
 	}
 
+
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		Box2<Integer> bbb = new Box2<Integer>();
 		bbb.aa = 50;
 		System.out.println(bbb.aa);
@@ -96,7 +105,7 @@ public class Test {
 		df = new DecimalFormat("\u00A4 #,###");
 		System.out.println(df.format(num));
 
-		aaa(new int[] { 3, 2, 4, 2, 5 });
+		aaa(new int[]{3, 2, 4, 2, 5});
 
 		List<Integer> listA = new ArrayList<Integer>(Arrays.asList(1, 2, 3));
 
@@ -106,7 +115,7 @@ public class Test {
 			System.out.print(item + "\t");
 		}
 
-		Integer[] arrs = { 5, -5, 8, 30, 9 }; // 5칸인 정수 배열 생성
+		Integer[] arrs = {5, -5, 8, 30, 9}; // 5칸인 정수 배열 생성
 		Arrays.sort(arrs); // arrs를 오름차순 정렬
 		// -5 5 8 9 30
 		int iMin = arrs[0]; // iMin은 배열 첫번째 값 -5
@@ -114,9 +123,11 @@ public class Test {
 
 		System.out.println("Max Number : " + iMax); // 출력 Max = 30
 		System.out.println("Min Number : " + iMin); // 출력 Min = -5
-		
+
 		String strasa = "가나다";
 		String strasd1 = "hi";
-		System.out.println(strasa.getBytes().length+ "   " + strasd1.getBytes().length);
+		System.out.println(
+				strasa.getBytes().length + "   " + strasd1.getBytes().length);
+
 	}
 }
